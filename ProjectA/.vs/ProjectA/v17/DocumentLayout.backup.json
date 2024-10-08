@@ -1,0 +1,182 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\03_Project\\Unity\\ProjectA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|c:\\03_project\\unity\\projecta\\assets\\scripts\\game\\poolingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\poolingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|C:\\03_Project\\Unity\\ProjectA\\assets\\scripts\\game\\objectpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\objectpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|C:\\03_Project\\Unity\\ProjectA\\assets\\scripts\\game\\playerdamagecollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\playerdamagecollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|C:\\03_Project\\Unity\\ProjectA\\assets\\scripts\\game\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|C:\\03_Project\\Unity\\ProjectA\\assets\\scripts\\game\\dummy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\dummy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|C:\\03_Project\\Unity\\ProjectA\\assets\\scripts\\game\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|C:\\03_Project\\Unity\\ProjectA\\assets\\scripts\\game\\parallaxbackground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\parallaxbackground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|C:\\03_Project\\Unity\\ProjectA\\assets\\scripts\\game\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|C:\\03_Project\\Unity\\ProjectA\\assets\\scripts\\title\\backgroundmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\title\\backgroundmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|C:\\03_Project\\Unity\\ProjectA\\assets\\scripts\\title\\titlescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D487F12-8A7F-6CA8-952E-456FE8FF156E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\title\\titlescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PoolingManager.cs",
+              "DocumentMoniker": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Game\\PoolingManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\PoolingManager.cs",
+              "ToolTip": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Game\\PoolingManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\PoolingManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T15:01:19.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ObjectPool.cs",
+              "DocumentMoniker": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Game\\ObjectPool.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\ObjectPool.cs",
+              "ToolTip": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Game\\ObjectPool.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\ObjectPool.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T14:33:11.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerDamageCollider.cs",
+              "DocumentMoniker": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Game\\PlayerDamageCollider.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\PlayerDamageCollider.cs",
+              "ToolTip": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Game\\PlayerDamageCollider.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\PlayerDamageCollider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:47:30.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Game\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\PlayerController.cs",
+              "ToolTip": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Game\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\PlayerController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAYwHMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T01:39:10.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dummy.cs",
+              "DocumentMoniker": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Game\\Dummy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\Dummy.cs",
+              "ToolTip": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Game\\Dummy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\Dummy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T01:30:27.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Monster.cs",
+              "DocumentMoniker": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Game\\Monster.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\Monster.cs",
+              "ToolTip": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Game\\Monster.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\Monster.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAtwBUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T01:23:42.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CameraController.cs",
+              "DocumentMoniker": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Game\\CameraController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\CameraController.cs",
+              "ToolTip": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Game\\CameraController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\CameraController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T07:48:06.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ParallaxBackground.cs",
+              "DocumentMoniker": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Game\\ParallaxBackground.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\ParallaxBackground.cs",
+              "ToolTip": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Game\\ParallaxBackground.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\ParallaxBackground.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T11:34:12.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TitleScript.cs",
+              "DocumentMoniker": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Title\\TitleScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Title\\TitleScript.cs",
+              "ToolTip": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Title\\TitleScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Title\\TitleScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T07:20:02.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BackgroundMove.cs",
+              "DocumentMoniker": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Title\\BackgroundMove.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Title\\BackgroundMove.cs",
+              "ToolTip": "C:\\03_Project\\Unity\\ProjectA\\Assets\\Scripts\\Title\\BackgroundMove.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Title\\BackgroundMove.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T14:58:54.141Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
