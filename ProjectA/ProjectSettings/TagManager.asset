@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Terrain
   - Monster
+  - PlayerSwing
   layers:
   - Default
   - TransparentFX
@@ -15,8 +16,8 @@ TagManager:
   - UI
   - Ground
   - Monster
-  - 
-  - 
+  - Player
+  - GroundSearch
   - 
   - 
   - 
@@ -49,8 +50,20 @@ TagManager:
   - name: Props
     uniqueID: 397015103
     locked: 0
+  - name: Monster
+    uniqueID: 3446817597
+    locked: 0
+  - name: ActiveEffect
+    uniqueID: 1744355947
+    locked: 0
   - name: Player
     uniqueID: 3109644477
+    locked: 0
+  - name: Effect
+    uniqueID: 1079114247
+    locked: 0
+  - name: WorldCanvas
+    uniqueID: 1904140455
     locked: 0
   m_RenderingLayers:
   - Default
