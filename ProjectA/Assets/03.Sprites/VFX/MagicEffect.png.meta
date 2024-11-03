@@ -961,7 +961,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MagicEffect_0: -412117992717643681
+      MagicEffect_1: 4370121182814285188
+      MagicEffect_10: 1625358505365420361
+      MagicEffect_11: 350370525595180685
+      MagicEffect_12: -5603869957258470606
+      MagicEffect_13: -2109872188228990136
+      MagicEffect_14: -5578698991255896771
+      MagicEffect_15: 6801836744763334403
+      MagicEffect_16: -3776157417155289558
+      MagicEffect_17: -9153304028909521855
+      MagicEffect_18: 22789469230732573
+      MagicEffect_19: 1685254685640111804
+      MagicEffect_2: 4440258744438517949
+      MagicEffect_20: -8793320617028462271
+      MagicEffect_21: -8437841824294340238
+      MagicEffect_22: 779202066945753112
+      MagicEffect_23: 8406314507621382488
+      MagicEffect_24: 1138105128157881923
+      MagicEffect_25: 2649871068215720493
+      MagicEffect_26: 3702174736395043786
+      MagicEffect_27: 5663857062349843834
+      MagicEffect_28: 3164914963108966358
+      MagicEffect_29: 1332721870995707471
+      MagicEffect_3: 949002875517962123
+      MagicEffect_30: -1674699724149437283
+      MagicEffect_31: -8829518594768909958
+      MagicEffect_4: -3609828897076814861
+      MagicEffect_5: -4861241081605823524
+      MagicEffect_6: 4180311631260740834
+      MagicEffect_7: -6966290094046187434
+      MagicEffect_8: -1334455198011061536
+      MagicEffect_9: -9135856946650551570
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

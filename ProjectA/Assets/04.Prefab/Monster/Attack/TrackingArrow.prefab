@@ -229,7 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 30
+  damage: 3000
 --- !u!1 &4577446923948837736
 GameObject:
   m_ObjectHideFlags: 0

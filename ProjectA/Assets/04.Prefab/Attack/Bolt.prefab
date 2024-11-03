@@ -177,7 +177,7 @@ MonoBehaviour:
   isMainAttack: 0
   playerPosition: {fileID: 0}
   particleName: SwingEffect2
-  damage: 15
+  damage: 1500
 --- !u!114 &6080110110770746971
 MonoBehaviour:
   m_ObjectHideFlags: 0

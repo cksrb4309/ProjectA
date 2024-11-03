@@ -9,7 +9,6 @@ public class FadeInOut : MonoBehaviour
     public float fadeTime;
     public float fadeSpeed;
     public Image fadeImage;
-
     private void Awake()
     {
         if (instance == null)
@@ -33,6 +32,7 @@ public class FadeInOut : MonoBehaviour
     private IEnumerator FadeCoroutine(Action action)
     {
         float fadeValue = 0;
+
         while (fadeValue < 1)
         {
             fadeValue += Time.deltaTime * fadeSpeed;

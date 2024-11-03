@@ -162,7 +162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 12
+  damage: 1200
 --- !u!1 &4214882860922403817
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +335,7 @@ MonoBehaviour:
   cd: {fileID: 8242839375711655252}
   hpBarParent: {fileID: 6767278238649451176}
   hpBar: {fileID: 8793019764521618354}
-  maxHpBase: 20
+  maxHpBase: 2000
   isBattle: 0
   slimeSearchCollider: {fileID: 2275445300338088906}
   animator: {fileID: 7067812689949392153}

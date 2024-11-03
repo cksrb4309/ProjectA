@@ -181,7 +181,7 @@ MonoBehaviour:
   isMainAttack: 0
   playerPosition: {fileID: 0}
   particleName: SwingEffect3
-  damage: 7
+  damage: 700
 --- !u!50 &3897558967686667785
 Rigidbody2D:
   serializedVersion: 5

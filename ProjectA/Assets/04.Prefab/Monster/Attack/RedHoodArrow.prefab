@@ -166,4 +166,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 1
   projectileName: RedHoodArrow
-  damage: 30
+  damage: 3000

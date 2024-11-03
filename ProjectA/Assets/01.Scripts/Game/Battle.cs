@@ -6,6 +6,8 @@ public class Battle : MonoBehaviour
 {
     public static Battle instance;
 
+    public CurrentStage currentStage;
+
     public SelectPanelGroup selectPanelGroup;
 
     public LevelSetting[] levels;

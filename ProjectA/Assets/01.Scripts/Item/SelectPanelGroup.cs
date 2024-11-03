@@ -16,6 +16,8 @@ public class SelectPanelGroup : MonoBehaviour
 
     public BattleLoader battleLoader;
 
+    public CurrentStage currentStage;
+
     public ItemProbability p; // itemProbability -> p
 
     List<List<Item>> items = new List<List<Item>>();
@@ -153,6 +155,8 @@ public class SelectPanelGroup : MonoBehaviour
         items[tmp.x].RemoveAt(tmp.y); // 아이템 리스트에서 제거
 
         battleLoader.ActivePortal(); // 포탈 활성화
+
+        currentStage.NextMove();
     }
     public void OnSelectPanel(int index)
     {

@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,9 @@ public class PlayerController : MonoBehaviour
     public MiragePlayerController mpc = null;
 
     public FastDownEffect fastDownEffect = null;
+
+    public TMP_Text hpText;
+    public TMP_Text spText;
 
     [SerializeField] ContactFilter2D filter;
     [SerializeField] Image hpFillImage;
@@ -66,6 +70,7 @@ public class PlayerController : MonoBehaviour
             spFillImage.fillAmount =
                 playerSp < 0 ?
                 0 : playerSp / playerMaxSp;
+            spText.text = playerSp.ToString("F0") + " / 100";
         }
     }
 
@@ -80,6 +85,7 @@ public class PlayerController : MonoBehaviour
             hpFillImage.fillAmount =
                 playerHp < 0 ?
                 0 : playerHp / playerMaxHp;
+            hpText.text = playerHp.ToString("F0") + " / " + playerMaxHp.ToString();
         }
     }
     public bool IsAlive { get { return playerHp > 0; } }

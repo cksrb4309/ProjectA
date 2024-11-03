@@ -1,0 +1,1131 @@
+Using pre-set license
+Built from 'trunk' branch; Version is '6000.0.20f1 (05208a74e9aa) revision 336010'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19043) 64bit Core' Language: 'ko' Physical Memory: 8001 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.20f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/rlack/Desktop/Git/ProjectA/ProjectA
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+58929
+-job-worker-count
+3
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: C:/Users/rlack/Desktop/Git/ProjectA/ProjectA
+C:/Users/rlack/Desktop/Git/ProjectA/ProjectA
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [20680]  Target information:
+
+Player connection [20680]  * "[IP] 192.168.35.87 [Port] 0 [Flags] 2 [Guid] 4209739096 [EditorId] 4209739096 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-3J2MS8IR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [20680] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [20680] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 35.17 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.20f1 (05208a74e9aa)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/rlack/Desktop/Git/ProjectA/ProjectA/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics (ID=0x9b41)
+    Vendor:   Intel
+    VRAM:     4000 MB
+    Driver:   26.20.100.7870
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56928
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.014540 seconds.
+- Loaded All Assemblies, in  1.070 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.184 seconds
+Domain Reload Profiling: 2246ms
+	BeginReloadAssembly (473ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (86ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (128ms)
+	LoadAllAssembliesAndSetupDomain (346ms)
+		LoadAssemblies (455ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (340ms)
+			TypeCache.Refresh (338ms)
+				TypeCache.ScanAssembly (304ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1185ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1085ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (60ms)
+			SetLoadedEditorAssemblies (11ms)
+			BeforeProcessingInitializeOnLoad (17ms)
+			ProcessInitializeOnLoadAttributes (565ms)
+			ProcessInitializeOnLoadMethodAttributes (268ms)
+			AfterProcessingInitializeOnLoad (165ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  5.470 seconds
+Refreshing native plugins compatible for Editor in 38.13 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  7.430 seconds
+Domain Reload Profiling: 12866ms
+	BeginReloadAssembly (2184ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (79ms)
+	RebuildCommonClasses (90ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (118ms)
+	LoadAllAssembliesAndSetupDomain (3015ms)
+		LoadAssemblies (1925ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1390ms)
+			TypeCache.Refresh (1044ms)
+				TypeCache.ScanAssembly (941ms)
+			BuildScriptInfoCaches (301ms)
+			ResolveRequiredComponents (34ms)
+	FinalizeReload (7432ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3317ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (14ms)
+			BeforeProcessingInitializeOnLoad (670ms)
+			ProcessInitializeOnLoadAttributes (2079ms)
+			ProcessInitializeOnLoadMethodAttributes (517ms)
+			AfterProcessingInitializeOnLoad (31ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 32.50 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7468 unused Assets / (6.3 MB). Loaded Objects now: 8273.
+Memory consumption went from 214.3 MB to 208.0 MB.
+Total: 35.616500 ms (FindLiveObjects: 2.588200 ms CreateObjectMapping: 3.307500 ms MarkObjects: 17.469700 ms  DeleteObjects: 12.243600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2081889.661732 seconds.
+  path: Assets/03.Sprites/VFX/223.png
+  artifactKey: Guid(6e97e71edd406fa44909c25d135b58fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/VFX/223.png using Guid(6e97e71edd406fa44909c25d135b58fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7aaac985ad19fe5c20d41c1a4a060987') in 0.2369498 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/03.Sprites/VFX/475.png
+  artifactKey: Guid(05d94b0371e23de49a09bde62a99320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/VFX/475.png using Guid(05d94b0371e23de49a09bde62a99320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b0f6bd100c8ee71cb53560a6e163b84') in 0.9195737 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 146
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.612517 seconds.
+  path: Assets/03.Sprites/Mob/Goblin/Attack.png
+  artifactKey: Guid(c1328a2b0a8d3f445b59003afd82e4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Mob/Goblin/Attack.png using Guid(c1328a2b0a8d3f445b59003afd82e4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5e5568102a3afc8cbe6f69f0a11b326f') in 0.1238432 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Assets/Warped Shooting Fx/Pixel Art/Bolt/bolt3.png
+  artifactKey: Guid(d46cf87437813484195d4a2eb2194538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Warped Shooting Fx/Pixel Art/Bolt/bolt3.png using Guid(d46cf87437813484195d4a2eb2194538) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f1990d4e72e232ae522b88c5239bcc66') in 0.1662929 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Assets/Warped Shooting Fx/Pixel Art/Crossed/crossed3.png
+  artifactKey: Guid(2923b2bd71b7543f0abec5366236955b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Warped Shooting Fx/Pixel Art/Crossed/crossed3.png using Guid(2923b2bd71b7543f0abec5366236955b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c98268d658b3692c90891b11159fc72') in 0.1023093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Assets/GandalfHardcore FREE Platformer Assets/Animated Sprites/Campfire sheet.png
+  artifactKey: Guid(2673f67e8b5db6a4eb34a2ca93371876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/GandalfHardcore FREE Platformer Assets/Animated Sprites/Campfire sheet.png using Guid(2673f67e8b5db6a4eb34a2ca93371876) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee71858bc21cf764bf66877b210f927b') in 0.3557469 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Assets/GandalfHardcore FREE Platformer Assets/GandalfHardcore Platformer Assets.png
+  artifactKey: Guid(1d929323839408d4c87c1cee2f71d6eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/GandalfHardcore FREE Platformer Assets/GandalfHardcore Platformer Assets.png using Guid(1d929323839408d4c87c1cee2f71d6eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e42f0f022fb5e6dfbedbc2833087f3a3') in 0.8648522 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 52
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/03.Sprites/Mob/Mushroom/Attack.png
+  artifactKey: Guid(8e70871fee61b9d4f94f313a41a8037d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Mob/Mushroom/Attack.png using Guid(8e70871fee61b9d4f94f313a41a8037d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd6d47d309cd2930d7a07fd23e7b0e02') in 0.1157732 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_arrow_left.png
+  artifactKey: Guid(e1ece8b09e364124ca949802a925afb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_arrow_left.png using Guid(e1ece8b09e364124ca949802a925afb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e10f15e0fad31c459884452c6c52ed9e') in 0.0634922 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_7.png
+  artifactKey: Guid(9bca598733fd3994b93383d20f186433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_7.png using Guid(9bca598733fd3994b93383d20f186433) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26ceee046e559c17b5e42b3a0c6f5f94') in 0.0443308 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_7.png
+  artifactKey: Guid(b2169f8b934b633418b33c5fcb06fc07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_7.png using Guid(b2169f8b934b633418b33c5fcb06fc07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e87f7a765fca44ef02ecaa2e80dfe3ce') in 0.1067256 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_4.png
+  artifactKey: Guid(111d8092d24712e4b9ea07b9ff5a96bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_4.png using Guid(111d8092d24712e4b9ea07b9ff5a96bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1cc2d78bea3e7001920bc6db855a2bf') in 0.0385596 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_semicolon.png
+  artifactKey: Guid(cabb37f6ad5d93d4fb34b0cbd0c57c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_semicolon.png using Guid(cabb37f6ad5d93d4fb34b0cbd0c57c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '55b7e6ddf9cb31ef9d49fd6f01e62fec') in 0.0379023 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/03.Sprites/parallax background/plx-3.png
+  artifactKey: Guid(f8da371ac4e58de4ba162d2bce6d460b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/parallax background/plx-3.png using Guid(f8da371ac4e58de4ba162d2bce6d460b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e7ddba5d21088eacae447b635a62d9b') in 0.0367117 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_6.png
+  artifactKey: Guid(489b50ed05063a0478e2cea179e41af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_6.png using Guid(489b50ed05063a0478e2cea179e41af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '10a62987b2412bc3ac48e63b79c55aeb') in 0.0624893 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_9.png
+  artifactKey: Guid(ae362d942c369c944936f9e1b9b27562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_9.png using Guid(ae362d942c369c944936f9e1b9b27562) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a659886d8c288f520df454d2e152a25e') in 0.0360953 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/03.Sprites/UI/UI_Flat_FrameSlot02a.png
+  artifactKey: Guid(ac4c1973683f5504b8a4de9dec5d14a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/UI/UI_Flat_FrameSlot02a.png using Guid(ac4c1973683f5504b8a4de9dec5d14a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c41ff46a4f03d6759ac76a2e71c89156') in 0.0441839 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/03.Sprites/UI/UI_Flat_FrameSlot01c.png
+  artifactKey: Guid(d8ee3426eba8dfb4da50bafc355a48d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/UI/UI_Flat_FrameSlot01c.png using Guid(d8ee3426eba8dfb4da50bafc355a48d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2933d146ae34e1ea82c59c339ad2e42c') in 0.0513527 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Assets/Warped Shooting Fx/Pixel Art/Spark/spark-preview2.png
+  artifactKey: Guid(4f51bb8911008429aa839a13067fa928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Warped Shooting Fx/Pixel Art/Spark/spark-preview2.png using Guid(4f51bb8911008429aa839a13067fa928) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c3e2540e1e473c496e12e3be42718f35') in 0.0489932 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/03.Sprites/UI/test2.png
+  artifactKey: Guid(5de585386e3fdf24286abea164feca7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/UI/test2.png using Guid(5de585386e3fdf24286abea164feca7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce3754828156a34c412b0d863189987e') in 0.0463483 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000496 seconds.
+  path: Assets/Assets/Warped Shooting Fx/Pixel Art/Waveform/waveform4.png
+  artifactKey: Guid(07f154720f2cc47c094b940d9d2b3b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Warped Shooting Fx/Pixel Art/Waveform/waveform4.png using Guid(07f154720f2cc47c094b940d9d2b3b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b97ac601fda1299331414a47fde838c') in 0.0403174 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/03.Sprites/UI/UI_Flat_FrameSlot03a.png
+  artifactKey: Guid(98d592cd398843d428f40dc70d3ac5a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/UI/UI_Flat_FrameSlot03a.png using Guid(98d592cd398843d428f40dc70d3ac5a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c668f4e59333e6e85abbbb3864b6570c') in 0.0343046 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tilemaps/pixel_keys_x16_white.png
+  artifactKey: Guid(a0e7b96060134ec4cb68788a8e238d70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tilemaps/pixel_keys_x16_white.png using Guid(a0e7b96060134ec4cb68788a8e238d70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '322e3e91bfeb12d56364a0cc5d45e2b3') in 0.0872845 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_alt.png
+  artifactKey: Guid(b5383b5e7700c1a4f955c06126a702b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_alt.png using Guid(b5383b5e7700c1a4f955c06126a702b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '307664a58dc27edc462eade1220a8307') in 0.0332003 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/03.Sprites/UI/test1.png
+  artifactKey: Guid(e08f86b5672d9fd40b88019e20fd8c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/UI/test1.png using Guid(e08f86b5672d9fd40b88019e20fd8c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8808e0e8a0a0c034f3ba42cc9b6981bd') in 0.0293166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_t.png
+  artifactKey: Guid(b413c7e038226054585a6880df6e7233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_t.png using Guid(b413c7e038226054585a6880df6e7233) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '238f2568fab76ae2e475bc236706dfdd') in 0.067494 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Assets/Warped Shooting Fx/Pixel Art/Crossed/crossed1.png
+  artifactKey: Guid(1bafe9d8b38ab4bf9ba9db099e4d7156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Warped Shooting Fx/Pixel Art/Crossed/crossed1.png using Guid(1bafe9d8b38ab4bf9ba9db099e4d7156) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5668b6849484cdd9610b7a737b8a5baf') in 0.0709507 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_w.png
+  artifactKey: Guid(8ac70a019afa17e47bfa5c810fdc39ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_w.png using Guid(8ac70a019afa17e47bfa5c810fdc39ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c8f7a70823482faf06d0baf461b5d89e') in 0.056582 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_arrow_up.png
+  artifactKey: Guid(c19e643e41330b741839aa38a0114124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_arrow_up.png using Guid(c19e643e41330b741839aa38a0114124) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ffdbb23c987ef1e90b7ceb0a2101b3f') in 0.0448946 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/03.Sprites/RedHood/Knife.png
+  artifactKey: Guid(194b420b1422a844f8132feeb53d902c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/RedHood/Knife.png using Guid(194b420b1422a844f8132feeb53d902c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ebf6866d600354317e6b808f3f44f8a9') in 0.0485619 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_arrow_down.png
+  artifactKey: Guid(96f7187aa1dd27a48a5677cfad62a338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_arrow_down.png using Guid(96f7187aa1dd27a48a5677cfad62a338) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5a53634e7ad7e20d35d8404b3602df24') in 0.0544001 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/03.Sprites/RedHood/TrackingArrow.png
+  artifactKey: Guid(9221ceff03c94c64e8f4478ba3f83718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/RedHood/TrackingArrow.png using Guid(9221ceff03c94c64e8f4478ba3f83718) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9d2daff089baf51b0473fda5fdf7c1bb') in 0.1630514 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_2.png
+  artifactKey: Guid(a0e5db82e4029664daa1f7dc8c87f2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_2.png using Guid(a0e5db82e4029664daa1f7dc8c87f2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ccf4e37861cc497e83b6767d32290b02') in 0.0391666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_x.png
+  artifactKey: Guid(178b3c85259912b46a87b701358a5b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_x.png using Guid(178b3c85259912b46a87b701358a5b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f2158676b0b5cc3b9baa0fc9d786833') in 0.0299522 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_caret.png
+  artifactKey: Guid(cde087d96b8dc854899290d2d4d0504a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_caret.png using Guid(cde087d96b8dc854899290d2d4d0504a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '21893887306241abfd99a119a1ad76d2') in 0.0660183 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_end.png
+  artifactKey: Guid(9f4e6becba726c545a95806b51032915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_end.png using Guid(9f4e6becba726c545a95806b51032915) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '947ed5c19483f8ab32c54e3370a1fb64') in 0.0453524 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_backspace.png
+  artifactKey: Guid(7aee4fd1a76a180409e0bd736fd224de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_backspace.png using Guid(7aee4fd1a76a180409e0bd736fd224de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b12a516f112defe3af8245d96ef87887') in 0.0526806 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f.png
+  artifactKey: Guid(0b68ec6c798f4de40933792359859f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f.png using Guid(0b68ec6c798f4de40933792359859f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee64ae17806f7ebd3342a8d37c8c8a99') in 0.0621224 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_delete.png
+  artifactKey: Guid(5d018d48329337b429f9fc65a3a279c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_delete.png using Guid(5d018d48329337b429f9fc65a3a279c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '50cd5677a9924f671ddd767ed9357a3c') in 0.04674 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_h.png
+  artifactKey: Guid(21734efbe30f13a4880618a9c54400b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_h.png using Guid(21734efbe30f13a4880618a9c54400b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0406663d37c4cca58ccb6124f2ec69ff') in 0.0947544 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_s.png
+  artifactKey: Guid(79c28efac613d4b4baa7558be7574aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_s.png using Guid(79c28efac613d4b4baa7558be7574aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c4b22973923e99aa971b7692908e0de') in 0.0587324 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_space_2.png
+  artifactKey: Guid(82ad98fcdf7d1b34595a402f2eefe83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_space_2.png using Guid(82ad98fcdf7d1b34595a402f2eefe83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8693142ac68587fb844808d49a2e6153') in 0.0468294 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_quote.png
+  artifactKey: Guid(a8ad3d614a1cb2c4ebffe08b83e4b07d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_quote.png using Guid(a8ad3d614a1cb2c4ebffe08b83e4b07d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0116098ed34d2486973a29c7243c9cd5') in 0.0523151 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_b.png
+  artifactKey: Guid(20bcaf47aea79b041a0750cfcf7eeabe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_b.png using Guid(20bcaf47aea79b041a0750cfcf7eeabe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd64aae844e7e86c200dc0eb335d2274') in 0.0427741 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_home.png
+  artifactKey: Guid(a2cdf8f8c3ce3114b90013ffde16b573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_home.png using Guid(a2cdf8f8c3ce3114b90013ffde16b573) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'be20196907724d22995b86ca56cb0fac') in 0.0375571 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_control.png
+  artifactKey: Guid(ae8ca6dca639672409a6326fa6b76bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_control.png using Guid(ae8ca6dca639672409a6326fa6b76bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f725d6ec50eb00531856471634762ba2') in 0.0333267 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f9.png
+  artifactKey: Guid(bbf80b5165f39084880a759c759bd048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f9.png using Guid(bbf80b5165f39084880a759c759bd048) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31b2b8dc9194b679c852387044f90de6') in 0.032941 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f7.png
+  artifactKey: Guid(c3f328a4fddf68740885d11fb376a566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f7.png using Guid(c3f328a4fddf68740885d11fb376a566) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '313c17b4c933430c60c6e0d4f9c2da16') in 0.0336172 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_m.png
+  artifactKey: Guid(92df3ad7c9a8eac4abc4e31072a4ec9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_m.png using Guid(92df3ad7c9a8eac4abc4e31072a4ec9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9ecf176d85a2851b8919982ad1594adc') in 0.0376869 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_2.png
+  artifactKey: Guid(8a01e74d3821f164a8b8bb9ac8d1111b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_2.png using Guid(8a01e74d3821f164a8b8bb9ac8d1111b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fbcec50de0337e8c01b1c517e583d04d') in 0.039431 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_ampersand.png
+  artifactKey: Guid(f01e5caa43ffdea42a82682bf176cc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_ampersand.png using Guid(f01e5caa43ffdea42a82682bf176cc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0fd26b2be0e4502da01f90fffc99eab2') in 0.077788 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Assets/Warped Shooting Fx/Pixel Art/Pulse/pulse2.png
+  artifactKey: Guid(2b18d44d6d8244d5bbdbef2b52ba068b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Warped Shooting Fx/Pixel Art/Pulse/pulse2.png using Guid(2b18d44d6d8244d5bbdbef2b52ba068b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '56c6160a1aca67e4689d7fb5860a1f19') in 0.0512899 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_scroll.png
+  artifactKey: Guid(9a9680e3dcc457142b50c586068719f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_scroll.png using Guid(9a9680e3dcc457142b50c586068719f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'edc8d1bd995693668474198b4cf73954') in 0.040861 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_1.png
+  artifactKey: Guid(9833ccd8872883b4e8297b9bc5686cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_1.png using Guid(9833ccd8872883b4e8297b9bc5686cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c6dfe0b046d2e4f63e25f7ff8866890') in 0.0436963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_x.png
+  artifactKey: Guid(eb6ed4cf80b7f6d42bfd9eb1e98eab60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_x.png using Guid(eb6ed4cf80b7f6d42bfd9eb1e98eab60) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cb74a043adaf533074f1c4f5013d5a8c') in 0.0692646 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_print.png
+  artifactKey: Guid(439d00199c7852b40b9db6f6c13ad870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_print.png using Guid(439d00199c7852b40b9db6f6c13ad870) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b7d5d5c8dc423dc573968eceeb9428fd') in 0.0369549 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_tab.png
+  artifactKey: Guid(cc2370abd0bafdf4e8045b6d5bda4e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_tab.png using Guid(cc2370abd0bafdf4e8045b6d5bda4e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77d0af134f5572f81502cc075180ae19') in 0.0326342 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_windows.png
+  artifactKey: Guid(bb1edcf1eef23f143b48698a99e1e3ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_windows.png using Guid(bb1edcf1eef23f143b48698a99e1e3ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27401c8f5483684e63e92f956ef03e8c') in 0.0337485 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/03.Sprites/Mob/Mushroom/Take Hit.png
+  artifactKey: Guid(973cc625f36190e498f1f81f900ce9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Mob/Mushroom/Take Hit.png using Guid(973cc625f36190e498f1f81f900ce9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '000cdab4a44d9176e5b7eed83991b6f2') in 0.0556362 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f3.png
+  artifactKey: Guid(e0cca6a22e40a3744a3b0ab1a9de32f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f3.png using Guid(e0cca6a22e40a3744a3b0ab1a9de32f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd5cad7d2cf305f1ca836469dbf4055fd') in 0.0974691 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Assets/Warped Shooting Fx/Pixel Art/Waveform/waveform2.png
+  artifactKey: Guid(e240c40da139d4e54aee2efe4960bec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Warped Shooting Fx/Pixel Art/Waveform/waveform2.png using Guid(e240c40da139d4e54aee2efe4960bec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51e34f15465387a0495598a803012d68') in 0.0250191 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/03.Sprites/VFX/Lightning.png
+  artifactKey: Guid(20c386936c0681b439cc24baade63570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/VFX/Lightning.png using Guid(20c386936c0681b439cc24baade63570) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '69f1297950d57c6f2e68f34eb0b680c9') in 0.0861045 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/03.Sprites/UI/SlideRight.png
+  artifactKey: Guid(7a6935b64baa5e64e972a1ff2297e1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/UI/SlideRight.png using Guid(7a6935b64baa5e64e972a1ff2297e1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '79d2dfc09bbd23ae791a067aff87b431') in 0.0351536 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_scroll.png
+  artifactKey: Guid(ef0fcb82fd608d0468500e6eb6756feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_scroll.png using Guid(ef0fcb82fd608d0468500e6eb6756feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1390ab5ceec1cba12a2d341a13dec268') in 0.0251419 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/03.Sprites/UI/UI_Flat_Frame03a.png
+  artifactKey: Guid(0db3efe2b7119394dbbbf8c36dbca83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/UI/UI_Flat_Frame03a.png using Guid(0db3efe2b7119394dbbbf8c36dbca83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e902014a7222349baf94a0d0107d43a') in 0.0417756 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/03.Sprites/Mob/Skeleton/Shield.png
+  artifactKey: Guid(9e937413c948e9546ac0732ff10df098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Mob/Skeleton/Shield.png using Guid(9e937413c948e9546ac0732ff10df098) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4d82fc9c08d9f9c1d2f6f0e937c72c2') in 0.0526276 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Assets/Warped Shooting Fx/Pixel Art/Crossed/crossed6.png
+  artifactKey: Guid(5cf070071288f47de93f37f2266c5a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Warped Shooting Fx/Pixel Art/Crossed/crossed6.png using Guid(5cf070071288f47de93f37f2266c5a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0576e7d3432e79a0caffb7d3b33edf4f') in 0.0307203 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_tab_icon.png
+  artifactKey: Guid(1364a402a692b1345b3184c9b3d98cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_tab_icon.png using Guid(1364a402a692b1345b3184c9b3d98cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '17b44ecfff25ed2faecdd0a039e268bc') in 0.0737475 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_8.png
+  artifactKey: Guid(7cdd907966b55eb49891123ee65eb3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_8.png using Guid(7cdd907966b55eb49891123ee65eb3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba477027d33ca53c2609ea56a62d125a') in 0.0538519 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Assets/Warped Shooting Fx/Pixel Art/Crossed/crossed4.png
+  artifactKey: Guid(7b72a4a7f319f495d9ce0dde84843b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Warped Shooting Fx/Pixel Art/Crossed/crossed4.png using Guid(7b72a4a7f319f495d9ce0dde84843b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '867bfc645319621a53181de041301c3c') in 0.0378103 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_vertical_bar.png
+  artifactKey: Guid(5c17a2ee33a0b3442a867a4d8c0139e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_vertical_bar.png using Guid(5c17a2ee33a0b3442a867a4d8c0139e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b57fb84e72e67d62a7b639a41df7c5b7') in 0.0423211 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_v.png
+  artifactKey: Guid(11f023c8643f69048b72bab93cc2a6f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_v.png using Guid(11f023c8643f69048b72bab93cc2a6f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9fe5d4c9228ed7d8dff01ad04d41d4bc') in 0.1611638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_t.png
+  artifactKey: Guid(413928cf5231dda4fbcd372f5e7eab04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_t.png using Guid(413928cf5231dda4fbcd372f5e7eab04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '04f84d8b6bc3ef1e18261ea789029b9d') in 0.0332762 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_money.png
+  artifactKey: Guid(a7206288135c44e42ae400bc67b73c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_money.png using Guid(a7206288135c44e42ae400bc67b73c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c3905c6ff50025cdc716072f8aa38a75') in 0.0392818 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000784 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_1.png
+  artifactKey: Guid(b941904b47a831b42b8893d4ef5ee50b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_1.png using Guid(b941904b47a831b42b8893d4ef5ee50b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ee3bced2eac95d2ae5b6ed90ad52c38') in 0.03472 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/03.Sprites/VFX/Dash.png
+  artifactKey: Guid(46142f1f490163041b2901b08590672c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/VFX/Dash.png using Guid(46142f1f490163041b2901b08590672c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '005348eebb4295924a1751dc47048c55') in 0.0711863 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_colon.png
+  artifactKey: Guid(ebe7e84c3d883584996b2c3d8c138efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_colon.png using Guid(ebe7e84c3d883584996b2c3d8c138efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '297ed2b0ae27c5024be07ecbd31f945f') in 0.0347409 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Assets/Warped Shooting Fx/Pixel Art/Spark/spark-preview4.png
+  artifactKey: Guid(60b96073820064558b98a49c7a3497db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Warped Shooting Fx/Pixel Art/Spark/spark-preview4.png using Guid(60b96073820064558b98a49c7a3497db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38a8cc1a288a9ee1d63d23093fb996b9') in 0.0251579 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Assets/GandalfHardcore FREE Platformer Assets/GandalfHardcore Platformer Assets v2.png
+  artifactKey: Guid(2f10f1ef6c736ad46b1c352dda93a407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/GandalfHardcore FREE Platformer Assets/GandalfHardcore Platformer Assets v2.png using Guid(2f10f1ef6c736ad46b1c352dda93a407) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8894e0ee3920f0023fd76c82ea6e71fb') in 0.5870142 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 52
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_pause.png
+  artifactKey: Guid(6a69256d41d945f469f9511989dfdc73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_pause.png using Guid(6a69256d41d945f469f9511989dfdc73) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba547a54ff6b893b26fac6d736c0c601') in 0.0531972 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_ampersand.png
+  artifactKey: Guid(22efbc6ab95819b49bed598acb0045ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_ampersand.png using Guid(22efbc6ab95819b49bed598acb0045ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '22758887e428bc2072a713cfd02068a6') in 0.0327505 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/03.Sprites/Portal/spr_portal_strip8_Green.png
+  artifactKey: Guid(27a0105127895e448b279201f1f81819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Portal/spr_portal_strip8_Green.png using Guid(27a0105127895e448b279201f1f81819) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a42d3776e056b84395cea46c34c5df5') in 0.1304891 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/03.Sprites/UI/UI_Flat_FrameSlot02b.png
+  artifactKey: Guid(85d13d912511e9447b66e09ccef4e05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/UI/UI_Flat_FrameSlot02b.png using Guid(85d13d912511e9447b66e09ccef4e05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df0a7ad799e09d69e90379d85604aa66') in 0.0630478 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_curly_bracket_left.png
+  artifactKey: Guid(fbc243760e78336488b96f8afc1a7e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_curly_bracket_left.png using Guid(fbc243760e78336488b96f8afc1a7e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '111bc2b7bcacba8fdc88e7142e95aa07') in 0.0610769 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_w.png
+  artifactKey: Guid(635cc9341d51c8841b45058e04ee7395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_w.png using Guid(635cc9341d51c8841b45058e04ee7395) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5e9a1785a77e9f41e4053252e764476c') in 0.0436527 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_escape.png
+  artifactKey: Guid(39348263f2f01474d924b1111b232d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_escape.png using Guid(39348263f2f01474d924b1111b232d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '952e0a3f924ec5614d5f597132ab9353') in 0.0646269 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f5.png
+  artifactKey: Guid(2cbb227746bb63c4c948cd74b561632f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f5.png using Guid(2cbb227746bb63c4c948cd74b561632f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db028e886ad4c13496fbce618731830d') in 0.0481339 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_equal.png
+  artifactKey: Guid(02d18b7c55186c9479f65ff12e03cea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_equal.png using Guid(02d18b7c55186c9479f65ff12e03cea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d8939b109dc73e3931d22bf97b37cdf') in 0.1643493 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/03.Sprites/VFX/smoke.png
+  artifactKey: Guid(922f5b1d070b5a94d950b8169d1aea67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/VFX/smoke.png using Guid(922f5b1d070b5a94d950b8169d1aea67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ebd99922144936c82a8f25d4afd0b115') in 0.1996801 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_z.png
+  artifactKey: Guid(6da362f3c7414f341a2af25d5b125b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_z.png using Guid(6da362f3c7414f341a2af25d5b125b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a22166e758dc84efb4e1bd6ce394cb0') in 0.0613366 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_i.png
+  artifactKey: Guid(55dbe752ea0be9d48b1a8a7474541a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_i.png using Guid(55dbe752ea0be9d48b1a8a7474541a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f044bc8b5ae74529d0a8d5c4afcab75') in 0.0429387 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_o.png
+  artifactKey: Guid(dae71f733763c8c41a7e6e5d7460caab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_o.png using Guid(dae71f733763c8c41a7e6e5d7460caab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7d18a8c5029c2ea941cc4fa09df934b') in 0.0759492 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_shift_icon.png
+  artifactKey: Guid(27d036ffdb0d6ec478800b50101a0684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_shift_icon.png using Guid(27d036ffdb0d6ec478800b50101a0684) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b23e7789d2aa166c4c965b442f9c97f3') in 0.0795463 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_double_quote.png
+  artifactKey: Guid(8884b251fe4611f48a7d7123108d9f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_double_quote.png using Guid(8884b251fe4611f48a7d7123108d9f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0b44423cedc33fd6856d68195f9b465') in 0.0555753 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/03.Sprites/Mob/Goblin/Run.png
+  artifactKey: Guid(62f2cd49bd9314c4cae58082c65d85a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Mob/Goblin/Run.png using Guid(62f2cd49bd9314c4cae58082c65d85a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6de946247da21c26af1b9cb5c3a008a0') in 0.230645 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_v.png
+  artifactKey: Guid(60463aa96c152f04d90cc0dd60323918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_v.png using Guid(60463aa96c152f04d90cc0dd60323918) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3a1f4ec34348f2f83dbd2fd5216a7e3d') in 0.0857146 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_arrow_up.png
+  artifactKey: Guid(6db58dc36a92b45409cd7fc0eae01dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_arrow_up.png using Guid(6db58dc36a92b45409cd7fc0eae01dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75e2963f4842ed192529a51daf732bfc') in 0.0693122 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_at.png
+  artifactKey: Guid(25b2060bca6f2984b99fab16bb8425da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_at.png using Guid(25b2060bca6f2984b99fab16bb8425da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6de15bdf8a59dc658f1635203acda6ee') in 0.0781091 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_page_down.png
+  artifactKey: Guid(6d5bb3a740df64944b7acb46ae65f204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_page_down.png using Guid(6d5bb3a740df64944b7acb46ae65f204) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e83a70c91056d5e3d351da3e33fd00b') in 0.0717987 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_semicolon.png
+  artifactKey: Guid(80cfc0222c086ae46b6ea70daad482c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_semicolon.png using Guid(80cfc0222c086ae46b6ea70daad482c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '63804b4b9b3258b7cd3fb943826114dc') in 0.0419414 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/03.Sprites/UI/UI_Flat_FrameSlot02c.png
+  artifactKey: Guid(20ed24ea69d94a94f8a9d847bc05fb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/UI/UI_Flat_FrameSlot02c.png using Guid(20ed24ea69d94a94f8a9d847bc05fb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4e659e0aa5259358d62e38b1681e7427') in 0.0377887 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_exclamation.png
+  artifactKey: Guid(f234d639444f0e14e9e793b869110499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_exclamation.png using Guid(f234d639444f0e14e9e793b869110499) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '691898f36e65e3cd840ffc2c93b6b60a') in 0.0383413 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f2.png
+  artifactKey: Guid(ee6685cdadc46d546a5cb9e523584bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f2.png using Guid(ee6685cdadc46d546a5cb9e523584bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8eca39bd0913d803a5d5aed2ed82300d') in 0.0718951 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/03.Sprites/Mob/Skeleton/Walk.png
+  artifactKey: Guid(9f6f8c2f4b87dd34fb42691e9b4c5364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Mob/Skeleton/Walk.png using Guid(9f6f8c2f4b87dd34fb42691e9b4c5364) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c6d32992f2ba2ddf305c81b476205f3c') in 0.1357236 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f10.png
+  artifactKey: Guid(f8c284f7474b06643926be18e160df02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f10.png using Guid(f8c284f7474b06643926be18e160df02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b606d725973aea1fff10463f3863e060') in 0.0520932 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f1.png
+  artifactKey: Guid(e5ea2dd4309cb564c859afa757404a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f1.png using Guid(e5ea2dd4309cb564c859afa757404a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '518ad6c3b2c881c91bdc0f4942cd269d') in 0.0419544 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/03.Sprites/UI/UI_Flat_FrameMarker03a.png
+  artifactKey: Guid(33a7a463efd6a8f4abf7b86ee13f7e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/UI/UI_Flat_FrameMarker03a.png using Guid(33a7a463efd6a8f4abf7b86ee13f7e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6c1f270c023c430e15350793e4feafd1') in 0.040235 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_arrow_right.png
+  artifactKey: Guid(c0a3cfb16b9ab8f4c9665de02237c383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_arrow_right.png using Guid(c0a3cfb16b9ab8f4c9665de02237c383) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '94375865d3801b83914caf43b0faae89') in 0.07974 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Assets/Warped Shooting Fx/Pixel Art/Pulse/pulse1.png
+  artifactKey: Guid(5334a60396bca40f19ac9d531fab2621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Warped Shooting Fx/Pixel Art/Pulse/pulse1.png using Guid(5334a60396bca40f19ac9d531fab2621) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1983c5b745faa82f5e1eb2ed5a7b1072') in 0.0555955 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/03.Sprites/UI/UI_Flat_FrameSlot01a.png
+  artifactKey: Guid(f842db3e00f2e7945bb0611ef0a55f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/UI/UI_Flat_FrameSlot01a.png using Guid(f842db3e00f2e7945bb0611ef0a55f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e2fc2820f46c1da31a0a8ea013f88f37') in 0.0524715 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f6.png
+  artifactKey: Guid(5e38f2ab06ed42f4dbd1b4896b12e3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f6.png using Guid(5e38f2ab06ed42f4dbd1b4896b12e3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b426379e23fc26d8cc83afad009d6ba') in 0.0647665 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_n.png
+  artifactKey: Guid(47283c1ab70cea44e805f64b47efda09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_n.png using Guid(47283c1ab70cea44e805f64b47efda09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '13697754c2db52d63b378b5060f8deef') in 0.0992391 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_dash.png
+  artifactKey: Guid(a1a84c40755800943a3af70077ce6f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_dash.png using Guid(a1a84c40755800943a3af70077ce6f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd9cc700704b76b561288be62e84565c') in 0.0407348 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/03.Sprites/AnimationSheet.png
+  artifactKey: Guid(eb58bbf11b291c24daff677fe32901cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/AnimationSheet.png using Guid(eb58bbf11b291c24daff677fe32901cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '30b19a8361f14c7b2ffdc5c99da306fb') in 0.185349 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_windows.png
+  artifactKey: Guid(03eccd80131133d469e2414aaef53336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_windows.png using Guid(03eccd80131133d469e2414aaef53336) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f9c0dae730b8d79ea149b619ecb4affa') in 0.0492556 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_shift.png
+  artifactKey: Guid(cf6025ec81ea8ab4d9d8ab4ee69b1b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_shift.png using Guid(cf6025ec81ea8ab4d9d8ab4ee69b1b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '107811072f59391e41c94c26777ec2b3') in 0.1976384 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/03.Sprites/UI/Warning.png
+  artifactKey: Guid(5f9cf66466cbec24da15d3a79c8f4231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/UI/Warning.png using Guid(5f9cf66466cbec24da15d3a79c8f4231) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '081b9fc24886fb692f6cbc7ed358688d') in 0.102512 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_num.png
+  artifactKey: Guid(94a4b87ac94c83149a585a50079bb40e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_num.png using Guid(94a4b87ac94c83149a585a50079bb40e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '382ebae2a60983948652623201cbdd59') in 0.1198756 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -717,7 +717,7 @@ public class RedHood : Monster
     }
     IEnumerator FillHpCoroutine()
     {
-        maxHp = phase == 1 ? 500 : 700;
+        maxHp = phase == 1 ? 50000 : 70000;
         maxHp *= Inventory.CurrentData.monsterHp;
 
         float t = 0;

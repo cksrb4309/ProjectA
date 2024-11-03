@@ -197,7 +197,7 @@ MonoBehaviour:
   cd: {fileID: 697417079429113078}
   hpBarParent: {fileID: 1657547710950196382}
   hpBar: {fileID: 2722738272444062633}
-  maxHpBase: 50
+  maxHpBase: 40000
   isBattle: 0
   moveTowardPlayerRatio: 8
   nextActionDelay: 1
@@ -352,7 +352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 20
+  damage: 2000
 --- !u!1 &416873611997919289
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,7 +458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 25
+  damage: 2500
 --- !u!1 &823108257241344619
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,7 +678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 25
+  damage: 2500
 --- !u!1 &1081227677734949305
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,7 +780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 50
+  damage: 5000
 --- !u!1 &1270912529744176407
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,7 +887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 25
+  damage: 2500
 --- !u!1 &1319435359485068889
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,7 +1078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 25
+  damage: 2500
 --- !u!1 &1657547710950196382
 GameObject:
   m_ObjectHideFlags: 0
@@ -11167,7 +11167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 25
+  damage: 2500
 --- !u!1 &3150973455379400449
 GameObject:
   m_ObjectHideFlags: 0
@@ -31073,7 +31073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 25
+  damage: 2500
 --- !u!1 &5548168850747984991
 GameObject:
   m_ObjectHideFlags: 0
@@ -36012,7 +36012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 25
+  damage: 2500
 --- !u!1 &6131497994879801517
 GameObject:
   m_ObjectHideFlags: 0
@@ -36113,7 +36113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 25
+  damage: 2500
 --- !u!1 &6305621650546807610
 GameObject:
   m_ObjectHideFlags: 0
@@ -41132,7 +41132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 20
+  damage: 2000
 --- !u!1 &7207756501535145217
 GameObject:
   m_ObjectHideFlags: 0
@@ -46603,7 +46603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 25
+  damage: 2500
 --- !u!1 &7432791109572927158
 GameObject:
   m_ObjectHideFlags: 0
@@ -56862,7 +56862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 25
+  damage: 2500
 --- !u!1 &8730952833126505254
 GameObject:
   m_ObjectHideFlags: 0
@@ -56966,7 +56966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 20
+  damage: 2000
 --- !u!1 &9123658863692921589
 GameObject:
   m_ObjectHideFlags: 0
@@ -57144,4 +57144,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 50
+  damage: 5000

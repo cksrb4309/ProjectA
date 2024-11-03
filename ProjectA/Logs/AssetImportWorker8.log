@@ -1,0 +1,371 @@
+Using pre-set license
+Built from 'trunk' branch; Version is '6000.0.20f1 (05208a74e9aa) revision 336010'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19043) 64bit Core' Language: 'ko' Physical Memory: 8001 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.20f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker8
+-projectPath
+C:/Users/rlack/Desktop/Git/ProjectA/ProjectA
+-logFile
+Logs/AssetImportWorker8.log
+-srvPort
+58929
+-job-worker-count
+3
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: C:/Users/rlack/Desktop/Git/ProjectA/ProjectA
+C:/Users/rlack/Desktop/Git/ProjectA/ProjectA
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [12520]  Target information:
+
+Player connection [12520]  * "[IP] 192.168.35.87 [Port] 0 [Flags] 2 [Guid] 2215228379 [EditorId] 2215228379 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-3J2MS8IR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [12520] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [12520] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 65.06 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.20f1 (05208a74e9aa)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/rlack/Desktop/Git/ProjectA/ProjectA/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics (ID=0x9b41)
+    Vendor:   Intel
+    VRAM:     4000 MB
+    Driver:   26.20.100.7870
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56320
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.015226 seconds.
+- Loaded All Assemblies, in  2.370 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.974 seconds
+Domain Reload Profiling: 4338ms
+	BeginReloadAssembly (697ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (142ms)
+	RebuildNativeTypeToScriptingClass (55ms)
+	initialDomainReloadingComplete (303ms)
+	LoadAllAssembliesAndSetupDomain (1163ms)
+		LoadAssemblies (684ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1153ms)
+			TypeCache.Refresh (1149ms)
+				TypeCache.ScanAssembly (1053ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1977ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1569ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (301ms)
+			SetLoadedEditorAssemblies (62ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (875ms)
+			ProcessInitializeOnLoadMethodAttributes (266ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  9.916 seconds
+Refreshing native plugins compatible for Editor in 83.39 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  6.243 seconds
+Domain Reload Profiling: 16127ms
+	BeginReloadAssembly (2239ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (124ms)
+	RebuildCommonClasses (193ms)
+	RebuildNativeTypeToScriptingClass (65ms)
+	initialDomainReloadingComplete (250ms)
+	LoadAllAssembliesAndSetupDomain (7137ms)
+		LoadAssemblies (4334ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (3374ms)
+			TypeCache.Refresh (2572ms)
+				TypeCache.ScanAssembly (2400ms)
+			BuildScriptInfoCaches (736ms)
+			ResolveRequiredComponents (51ms)
+	FinalizeReload (6244ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3798ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (22ms)
+			BeforeProcessingInitializeOnLoad (435ms)
+			ProcessInitializeOnLoadAttributes (2850ms)
+			ProcessInitializeOnLoadMethodAttributes (448ms)
+			AfterProcessingInitializeOnLoad (32ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 43.25 ms, found 8 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 241 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7468 unused Assets / (3.7 MB). Loaded Objects now: 8273.
+Memory consumption went from 214.4 MB to 210.7 MB.
+Total: 152.909100 ms (FindLiveObjects: 11.392000 ms CreateObjectMapping: 13.760500 ms MarkObjects: 93.547400 ms  DeleteObjects: 34.202500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2081931.515007 seconds.
+  path: Assets/03.Sprites/red hood itch free Copy-Sheet.png
+  artifactKey: Guid(9169a0e3c2949a94ea5be453624609b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/red hood itch free Copy-Sheet.png using Guid(9169a0e3c2949a94ea5be453624609b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e9dedd000760912e2ee30822b511728a') in 3.2198138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 155
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_tab.png
+  artifactKey: Guid(12b32eaa4149d9943a57ca283167b8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_tab.png using Guid(12b32eaa4149d9943a57ca283167b8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '581417c18dab298d2ce2b895b4a21e40') in 0.0785484 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/03.Sprites/UI/test4.png
+  artifactKey: Guid(2e478363defd844499db9e5dcfa08eca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/UI/test4.png using Guid(2e478363defd844499db9e5dcfa08eca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a28665e978ea228a50bd3cf24ddffc1') in 0.0741665 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_plus.png
+  artifactKey: Guid(eb0218deb461ff94a9026216b51d7a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_plus.png using Guid(eb0218deb461ff94a9026216b51d7a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f41f4d47d3f4cf431d63fb895c4b6b6') in 0.0436716 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f4.png
+  artifactKey: Guid(3f7014c301cbe594ca2c13796eab3d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_f4.png using Guid(3f7014c301cbe594ca2c13796eab3d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f11ab3e8c835a5ffcd3bf1ce30d0ce92') in 0.0640729 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_u.png
+  artifactKey: Guid(12981abcbe25717498ddc1f4460e2b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_u.png using Guid(12981abcbe25717498ddc1f4460e2b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5e9816db3ff2a6e99d11a0bf6e90355d') in 0.0653178 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_space_2.png
+  artifactKey: Guid(a8e9acdc3de62b24f848984571257157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles Black/pxkb_space_2.png using Guid(a8e9acdc3de62b24f848984571257157) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ab908c698c7b866640b7e8ccf3dab1d2') in 0.0754522 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_p.png
+  artifactKey: Guid(eca96014f989e164183b149c3da24194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_p.png using Guid(eca96014f989e164183b149c3da24194) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a05250af88d5f4f5f8753a6331e37077') in 0.0555528 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/03.Sprites/UI/test3.png
+  artifactKey: Guid(6927cbd1988845b4b93cde1ee101d78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/UI/test3.png using Guid(6927cbd1988845b4b93cde1ee101d78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b0992403688d3770eb74e23efc4b53f2') in 0.0822425 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_a.png
+  artifactKey: Guid(4db132fce1f98a447aa7fc4a2875c371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_a.png using Guid(4db132fce1f98a447aa7fc4a2875c371) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '03ee762e298971a067e200ae0cc9e337') in 0.0804168 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_r.png
+  artifactKey: Guid(0fe1827c70d9fea46995bc4503d12c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_r.png using Guid(0fe1827c70d9fea46995bc4503d12c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f44ad0299b9f8c970e291de7b15f87b9') in 0.0434346 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/03.Sprites/parallax background/plx-2.png
+  artifactKey: Guid(4d81db3c7c3be034c9d7d0563a8ed893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/parallax background/plx-2.png using Guid(4d81db3c7c3be034c9d7d0563a8ed893) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '981f2523306fe913932fe80cfc239ab4') in 0.0449441 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_hash.png
+  artifactKey: Guid(27e96c1490fd3e04cbfe2b82cc215e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_hash.png using Guid(27e96c1490fd3e04cbfe2b82cc215e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '346ddaa15bddcef86f7504627ca44efa') in 0.0842961 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Assets/Warped Shooting Fx/Pixel Art/Crossed/crossed2.png
+  artifactKey: Guid(0387054b082bb48b288527af5ce34c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Warped Shooting Fx/Pixel Art/Crossed/crossed2.png using Guid(0387054b082bb48b288527af5ce34c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '59f320b0e156a611c494500bacb6c47e') in 0.0753295 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_page_up.png
+  artifactKey: Guid(e9747e13777267d4dbdb85d09514a0eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_page_up.png using Guid(e9747e13777267d4dbdb85d09514a0eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ab46f602d72a66acfbe08499d5dbdee2') in 0.0452975 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_grave_accent.png
+  artifactKey: Guid(9f1b18abaa1daee4794fb479da26246c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_grave_accent.png using Guid(9f1b18abaa1daee4794fb479da26246c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '92a4b44e43f861c622f7dc1f10730e62') in 0.0704424 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/03.Sprites/Mob/Mushroom/Run.png
+  artifactKey: Guid(3f8467188eb065f4da2f7056f425701c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Mob/Mushroom/Run.png using Guid(3f8467188eb065f4da2f7056f425701c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5f56f2ac44d2b8d06adc81af14b65809') in 0.2198668 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_shift.png
+  artifactKey: Guid(27ad98580a2a1a14f9d040255c15f944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_shift.png using Guid(27ad98580a2a1a14f9d040255c15f944) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '69f842bd301e52b41355c070f88cf760') in 0.0645672 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_forwardslash.png
+  artifactKey: Guid(a75d8e4f6a49aa54e942c0cca497b7c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_forwardslash.png using Guid(a75d8e4f6a49aa54e942c0cca497b7c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e99db4376059de9f7b561debd481edc9') in 0.0473315 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_insert.png
+  artifactKey: Guid(16f1442af6ddc454eb1f666ad3fcad8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_insert.png using Guid(16f1442af6ddc454eb1f666ad3fcad8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb403454beeed2454f324794fc70f70d') in 0.0741079 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Assets/JungleAsset/Jungle Asset Pack/Chacter with outline/sprites/landing outline.png
+  artifactKey: Guid(e81c6aef36126cd47a479f06155a7b69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/JungleAsset/Jungle Asset Pack/Chacter with outline/sprites/landing outline.png using Guid(e81c6aef36126cd47a479f06155a7b69) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c9d54fa4871bcafc707602071564a89c') in 0.0565429 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_d.png
+  artifactKey: Guid(29b3b1ededa0451469408056e0fe923a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Pixel Keys x16/Tiles White/pxkw_d.png using Guid(29b3b1ededa0451469408056e0fe923a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bcd80ca6fdce11c26152b41c9d0b8d61') in 0.1279782 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/03.Sprites/Portal/spr_portal_strip8_Blue.png
+  artifactKey: Guid(a5792655cfd281448ba49dd2a598f2aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03.Sprites/Portal/spr_portal_strip8_Blue.png using Guid(a5792655cfd281448ba49dd2a598f2aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a6d0279cbcf7c2a9343e6160f48a6f0') in 0.2152173 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

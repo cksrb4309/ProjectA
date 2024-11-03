@@ -109,7 +109,7 @@ MonoBehaviour:
   isMainAttack: 1
   playerPosition: {fileID: 0}
   particleName: SwingEffect3
-  damage: 25
+  damage: 2500
 --- !u!60 &6565070916596913988
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -145,4 +145,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 15
+  damage: 1500
