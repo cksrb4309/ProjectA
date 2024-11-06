@@ -16,11 +16,13 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
-    public void ClearGame()
+    public void GameClear()
     {
         clearPanel.SetActive(true);
+
+        SoundManager.Play("ClearBGM", SoundType.Background);
     }
-    public void Die()
+    public void GameOver()
     {
         deadPanel.SetActive(true);
     }

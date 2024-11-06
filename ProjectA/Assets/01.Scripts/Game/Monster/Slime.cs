@@ -41,7 +41,6 @@ public class Slime : Monster
             else animator.SetTrigger("RightMove");
         }
     }
-
     private IEnumerator BehaviorCoroutine()
     {
         while (true)
@@ -68,6 +67,8 @@ public class Slime : Monster
     {
         animator.SetBool("Dead", true);
 
+        SoundManager.MonsterDiePlay();
+
         cd.enabled = false;
     }
 
@@ -83,5 +84,17 @@ public class Slime : Monster
     public void RightAttack()
     {
         animator.SetTrigger("RightAttack");
+    }
+    void AttackSound()
+    {
+        SoundManager.Play("SlimeAttack", SoundType.Effect);
+    }
+    void MoveSound1()
+    {
+        SoundManager.Play("SlimeMove1", SoundType.Effect);
+    }
+    void MoveSound2()
+    {
+        SoundManager.Play("SlimeMove2", SoundType.Effect);
     }
 }

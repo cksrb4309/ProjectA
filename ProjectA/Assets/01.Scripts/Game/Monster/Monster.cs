@@ -15,7 +15,11 @@ public class Monster : MonoBehaviour
     [SerializeField] protected Collider2D cd;
     [SerializeField] protected GameObject hpBarParent;
     [SerializeField] protected Image hpBar;
-    [SerializeField] protected float maxHpBase;
+
+    [SerializeField] protected float[] maxHpBases;
+
+    [SerializeField] protected float heightOffset = 0f;
+    
     protected float maxHp;
     float hp;
 
@@ -77,6 +81,8 @@ public class Monster : MonoBehaviour
 
                 MaximizerSupport.instance.OffMaximizer();
 
+                SoundManager.Play("Maximizer", SoundType.Effect);
+
                 damage *= 5f;
 
                 damageType = 2;
@@ -111,9 +117,13 @@ public class Monster : MonoBehaviour
 
                 if (PlayerController.isLifesteal)
                 {
-                    float value = damage * 0.05f;
+                    float value = damage * 0.03f;
 
-                    PlayerController.instance.Hit(-value);
+                    HealObj healObj = PoolingManager.Instance.GetObject<HealObj>("HealObj");
+
+                    healObj.transform.position = GetCenterPosition();
+
+                    healObj.Setting(value);
                 }
             }
         }
@@ -125,9 +135,9 @@ public class Monster : MonoBehaviour
     public void Setting()
     {
         if (Inventory.CurrentData != null)
-            maxHp = maxHpBase * Inventory.CurrentData.monsterHp;
+            maxHp = maxHpBases[(int)Option.difficulty] * Inventory.CurrentData.monsterHp;
         else
-            maxHp = maxHpBase;
+            maxHp = maxHpBases[(int)Option.difficulty];
 
         Hp = maxHp;
 
@@ -162,6 +172,6 @@ public class Monster : MonoBehaviour
     }
     public Vector3 GetCenterPosition()
     {
-        return transform.position + (Vector3.up * Height);
+        return transform.position + (Vector3.up * (Height + heightOffset));
     }
 }

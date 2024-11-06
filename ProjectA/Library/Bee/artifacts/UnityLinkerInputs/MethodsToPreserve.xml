@@ -1,5 +1,41 @@
 <linker>
 	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="AudioSelectPlay">
+			<method name="OnUIClickSound"/>
+			<method name="OnUIClickSound"/>
+			<method name="OnUIClickSound"/>
+			<method name="OnUIClickSound"/>
+			<method name="OnUIClickSound"/>
+			<method name="OnUIClickSound"/>
+			<method name="OnUIClickSound"/>
+			<method name="OnUIClickSound"/>
+			<method name="OnUIClickSound"/>
+			<method name="OnUIClickSound"/>
+			<method name="OnUIClickSound"/>
+			<method name="OnUIClickSound"/>
+			<method name="OnUIClickSound"/>
+			<method name="OnUIClickSound"/>
+			<method name="OnUIClickSound"/>
+			<method name="OnUIClickSound"/>
+			<method name="OnUIClickSound"/>
+			<method name="OnUIEnterSound"/>
+			<method name="OnUIEnterSound"/>
+			<method name="OnUIEnterSound"/>
+			<method name="OnUIEnterSound"/>
+			<method name="OnUIEnterSound"/>
+			<method name="OnUIEnterSound"/>
+			<method name="OnUIEnterSound"/>
+			<method name="OnUIEnterSound"/>
+			<method name="OnUIEnterSound"/>
+			<method name="OnUIEnterSound"/>
+			<method name="OnUIEnterSound"/>
+			<method name="OnUIEnterSound"/>
+			<method name="OnUIEnterSound"/>
+			<method name="OnUIEnterSound"/>
+			<method name="OnUIEnterSound"/>
+			<method name="OnUIEnterSound"/>
+			<method name="OnUIEnterSound"/>
+		</type>
 		<type fullname="GameClearPanel">
 			<method name="LoadScene"/>
 			<method name="LoadScene"/>
@@ -27,6 +63,27 @@
 			<method name="MouseExit"/>
 			<method name="MouseExit"/>
 		</type>
+		<type fullname="LineUI">
+			<method name="Decrease"/>
+			<method name="Decrease"/>
+			<method name="Decrease"/>
+			<method name="Decrease"/>
+			<method name="Increase"/>
+			<method name="Increase"/>
+			<method name="Increase"/>
+			<method name="Increase"/>
+		</type>
+		<type fullname="Option">
+			<method name="BGM_Volume_Change"/>
+			<method name="BGM_Volume_Change"/>
+			<method name="EasySelect"/>
+			<method name="ExitButton"/>
+			<method name="ExitButton"/>
+			<method name="HardSelect"/>
+			<method name="NormalSelect"/>
+			<method name="SFX_Volume_Change"/>
+			<method name="SFX_Volume_Change"/>
+		</type>
 		<type fullname="SelectPanelGroup">
 			<method name="OnSelectPanel"/>
 			<method name="OnSelectPanel"/>
@@ -37,8 +94,20 @@
 		</type>
 		<type fullname="TitleScript">
 			<method name="CloseControlPanel"/>
+			<method name="CloseControlPanel"/>
+			<method name="ExitButton"/>
+			<method name="ExitButton"/>
 			<method name="GameSceneLoad"/>
 			<method name="OpenControlPanel"/>
+			<method name="OpenOptionPanel"/>
+		</type>
+		<type fullname="TutorialUI">
+			<method name="Play"/>
+			<method name="Play"/>
+			<method name="Play"/>
+			<method name="Play"/>
+			<method name="Play"/>
+			<method name="Play"/>
 		</type>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime" ignoreIfMissing="1">

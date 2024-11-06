@@ -478,12 +478,12 @@ TextureImporter:
       name: adventurer-v1.5-Sheet_0
       rect:
         serializedVersion: 2
-        x: 14
+        x: 13
         y: 556
-        width: 19
+        width: 20
         height: 29
       alignment: 9
-      pivot: {x: 0.58786815, y: 0}
+      pivot: {x: 0.61798465, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -502,10 +502,10 @@ TextureImporter:
         serializedVersion: 2
         x: 66
         y: 556
-        width: 17
+        width: 20
         height: 30
       alignment: 9
-      pivot: {x: 0.55140865, y: 0}
+      pivot: {x: 0.48448983, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -524,10 +524,10 @@ TextureImporter:
         serializedVersion: 2
         x: 115
         y: 556
-        width: 19
+        width: 20
         height: 30
       alignment: 9
-      pivot: {x: 0.5487687, y: 0}
+      pivot: {x: 0.5217689, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

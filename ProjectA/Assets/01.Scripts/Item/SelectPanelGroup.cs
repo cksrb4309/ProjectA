@@ -22,12 +22,13 @@ public class SelectPanelGroup : MonoBehaviour
 
     List<List<Item>> items = new List<List<Item>>();
 
-    pair[] itemIndexList = new pair[3];
+    Pair[] itemIndexList = new Pair[3];
 
     int selectIndex = -1;
 
-
     bool isCheck = false;
+
+    HashSet<Item> selectItemSet = new HashSet<Item>();
 
     private void Start()
     {
@@ -44,12 +45,12 @@ public class SelectPanelGroup : MonoBehaviour
             for (int i = 0; i < allItemArray.Length; i++)
                 items[(int)allItemArray[i].itemGrade].Add(allItemArray[i]);
         }
-        /*for (int i = 0; i < allItemArray.Length; i++)
-            items[(int)allItemArray[i].itemGrade].Add(allItemArray[i]);*/
     }
 
     public void ItemSetting()
     {
+        selectItemSet.Clear();
+
         for (int i = 0; i < selectPanels.Length; i++)
             selectPanels[i].SetSelectPanel(ItemSelect(i));
     }
@@ -61,12 +62,17 @@ public class SelectPanelGroup : MonoBehaviour
 
         Item item = items[selectGrade][selectItemIndex];
 
-        // 제거 할 때 : items[selectGrade].RemoveAt(selectItemIndex);
+        if (selectItemSet.Add(item) == false)
+        {
+            return ItemSelect(index);
+        }
+        else
+        {
+            itemIndexList[index].x = selectGrade;
+            itemIndexList[index].y = selectItemIndex;
 
-        itemIndexList[index].x = selectGrade;
-        itemIndexList[index].y = selectItemIndex;
-
-        return item;
+            return item;
+        }
     }
     private int RandomGradeSelect()
     {
@@ -142,7 +148,7 @@ public class SelectPanelGroup : MonoBehaviour
     {
         Inventory.instance.GetItem(selectPanels[selectIndex].item); // 아이템 넘김
 
-        pair tmp = itemIndexList[selectIndex];
+        Pair tmp = itemIndexList[selectIndex];
 
         backgroundPanel.color = new Color(0,0,0,0);
 
@@ -157,6 +163,8 @@ public class SelectPanelGroup : MonoBehaviour
         battleLoader.ActivePortal(); // 포탈 활성화
 
         currentStage.NextMove();
+
+        Inventory.BattleEnd(); // 전투와 보상을 모두 수행 했으면 전투가 끝났을 때 나타나는 효과 활성화
     }
     public void OnSelectPanel(int index)
     {
@@ -184,7 +192,7 @@ public class SelectPanelGroup : MonoBehaviour
         }
     }
 }
-struct pair
+struct Pair
 {
     public int x;
     public int y;

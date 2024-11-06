@@ -18,7 +18,6 @@ public class Goblin : Monster
 
         searchCollider.enabled = false;
     }
-
     public void Run()
     {
         isAttacking = false;
@@ -36,6 +35,10 @@ public class Goblin : Monster
 
         ar.SetTrigger("Attack");
     }
+    public void AttackSoundPlay()
+    {
+        SoundManager.Play("GoblinAttack", SoundType.Effect);
+    }
     public override void Hit(float damage, bool isMainAttack = true)
     {
         base.Hit(damage, isMainAttack);
@@ -46,9 +49,11 @@ public class Goblin : Monster
         }
         else
         {
-            ar.SetTrigger("Die");
+            ar.SetBool("Die", true);
 
             cd.enabled = false;
+
+            SoundManager.MonsterDiePlay();
         }
     }
     void ReturnGoblin()

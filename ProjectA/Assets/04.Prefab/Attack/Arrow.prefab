@@ -168,6 +168,7 @@ MonoBehaviour:
   projectileName: Arrow
   isMainAttack: 0
   playerPosition: {fileID: 0}
+  hitEffectSound: MagicAttack
   particleName: ArrrowHit
   damage: 500
 --- !u!50 &3593815673213129343

@@ -19,4 +19,8 @@ public class Bolt : MonoBehaviour
     {
         PoolingManager.Instance.ReturnObject("Bolt", gameObject);
     }
+    void CreateBoltSoundPlay()
+    {
+        SoundManager.Play("CreateBolt", SoundType.Effect);
+    }
 }

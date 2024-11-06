@@ -657,6 +657,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: slime-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1
+        width: 28
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d193d8f902f2c48a4dd0e630e86910
+      internalID: -949247694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -688,6 +710,7 @@ TextureImporter:
       idle2: 5952692474738800764
       idle3: 4909821198284645373
       idle4: 4179155057698957012
+      slime-Sheet_0: -949247694
       walk1: -8154299252778131244
       walk2: 1734891440256307957
       walk3: 6887022319851403142

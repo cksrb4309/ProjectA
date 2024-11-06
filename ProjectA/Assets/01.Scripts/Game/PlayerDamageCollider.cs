@@ -7,6 +7,7 @@ public class PlayerDamageCollider : MonoBehaviour
     [SerializeField] string projectileName = string.Empty;
     [SerializeField] bool isMainAttack = true;
     [SerializeField] Transform playerPosition;
+    [SerializeField] string hitEffectSound = string.Empty;
     [SerializeField] string particleName = string.Empty;
     [SerializeField] float damage;
 
@@ -26,6 +27,11 @@ public class PlayerDamageCollider : MonoBehaviour
                 false : true);
 
             other.GetComponent<Monster>().Hit(damage, isMainAttack);
+
+            if (!hitEffectSound.Equals(string.Empty))
+            {
+                SoundManager.Play(hitEffectSound, SoundType.Effect);
+            }
 
             if (isProjectile)
             {

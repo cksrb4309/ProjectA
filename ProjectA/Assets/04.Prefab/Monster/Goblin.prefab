@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 4214696125803504304}
   - component: {fileID: 4206814367805144268}
   - component: {fileID: 3133805386353085080}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: AttackCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -170,7 +170,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 20
+  damages:
+  - 2000
+  - 2000
+  - 2500
 --- !u!1 &2912678352415682982
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,7 +356,11 @@ MonoBehaviour:
   cd: {fileID: 226919648421077126}
   hpBarParent: {fileID: 7159917455009539539}
   hpBar: {fileID: 9182715439382603932}
-  maxHpBase: 4500
+  maxHpBases:
+  - 3500
+  - 5500
+  - 7000
+  heightOffset: -1.2
   isBattle: 0
   ar: {fileID: 8310137321601942881}
   searchCollider: {fileID: 5052271998454783842}
@@ -458,7 +465,7 @@ Transform:
   m_GameObject: {fileID: 3305814099467267993}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.021, y: 0.08, z: 0}
+  m_LocalPosition: {x: -0.021, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -689,7 +696,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.8595121, y: 0.384856}
+  m_Offset: {x: 0.3212614, y: 0.384856}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -699,7 +706,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.778265, y: 0.6579056}
+  m_Size: {x: 0.70176363, y: 0.6579056}
   m_EdgeRadius: 0
 --- !u!114 &4298528262513722416
 MonoBehaviour:

@@ -89,6 +89,8 @@ public class FlyingEye : Monster
     }
     IEnumerator AttackCoroutine()
     {
+        SoundManager.Play("FlyingEyeAttack", SoundType.Effect);
+
         Vector3 startPos = transform.position;
         Vector3 endPos = transform.position + (playerTransform.position - startPos).normalized * 10f;
 
@@ -127,12 +129,15 @@ public class FlyingEye : Monster
         base.Hit(damage, isMainAttack);
 
         if (!IsAlive) Dead();
+        //else animator.SetTrigger("Hit");
     }
     private void Dead()
     {
         animator.SetTrigger("Die1");
 
         GetComponent<Collider2D>().enabled = false;
+
+        SoundManager.MonsterDiePlay();
 
         StopAllCoroutines();
 
@@ -147,6 +152,8 @@ public class FlyingEye : Monster
             yield return null;
         }
         transform.position = transform.position + new Vector3(0, -3f - transform.position.y, 0);
+
+        SoundManager.Play("FlyingEyeLand", SoundType.Effect);
 
         animator.SetTrigger("Die2");
     }

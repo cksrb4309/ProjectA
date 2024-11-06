@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class BattleLoader : MonoBehaviour
 {
     public AnimationCurve speedCurve;
-
+    public Collider2D cd;
     public SpriteRenderer blinkSr;
     public GameObject portal;
     public GameObject lobby;
@@ -21,6 +21,14 @@ public class BattleLoader : MonoBehaviour
     public RectTransform right;
     public Image leftImage;
     public Image rightImage;
+    public Sprite redLeft;
+    public Sprite redRight;
+    public Color redTextColor;
+    public Image[] parallaxBackgrounds;
+    public Sprite[] redBackgrounds;
+    public GameObject defaultGround;
+    public GameObject redHoodBattleGround;
+    public SpriteRenderer outlineSprite;
     public RectTransform centerRect;
 
     Vector2 pos;
@@ -40,24 +48,27 @@ public class BattleLoader : MonoBehaviour
     // dir는 값의 방향으로 true일 때는 증가 false일 때는 알파값을 감소시킴
 
 
-    private void Awake()
-    {
-        left.anchoredPosition = new Vector2(-Screen.width / 2f, 0);
-        right.anchoredPosition = new Vector2(Screen.width / 2f, 0);
-
-        centerRect.anchoredPosition = new Vector2(Screen.width * 1.6f, 0);
-    }
-
     public void BattleLoad()
     {
         pos.Set(Screen.width * 1.6f, 0);
 
         centerRect.anchoredPosition = pos;
 
+        SoundManager.Play("StartStage", SoundType.Effect);
+
         if (++stage == 10)
+        {
             stageTextUI.text = "빨간 망토";
+
+            leftImage.sprite = redLeft;
+            rightImage.sprite = redRight;
+
+            stageTextUI.color = redTextColor;
+
+            SoundManager.Play("BossBGM", SoundType.Background);
+        }
         else
-            stageTextUI.text = "Stage [" + stage.ToString() + ']';
+            stageTextUI.text = "Stage " + (stage+1).ToString();
 
         StartCoroutine(LoadCoroutine(HideLobby, Battle.instance.StartBattle));
     }
@@ -75,13 +86,13 @@ public class BattleLoader : MonoBehaviour
                 LoadCoroutine(ShowLobby,
                 Inventory.instance.selectPanelGroup.StartSelectItem));
         }
-
-        isCheck = true;
         dir = false;
     }
     public void ActivePortal()
     {
         isStageEntered = false;
+
+        cd.enabled = true;
     }
     void ShowLobby()
     {
@@ -94,6 +105,10 @@ public class BattleLoader : MonoBehaviour
         lobby.SetActive(false);
 
         portal.SetActive(false);
+
+        isStageEntered = true;
+
+        isCheck = false;
     }
 
     IEnumerator LoadCoroutine(Action mid = null, Action end = null)
@@ -121,6 +136,16 @@ public class BattleLoader : MonoBehaviour
         centerRect.anchoredPosition = midPos;
 
         if (mid != null) mid.Invoke();
+
+        if (stage == 10)
+        {
+            for (int i = 0; i < parallaxBackgrounds.Length; i++)
+                parallaxBackgrounds[i].sprite = redBackgrounds[i];
+
+            defaultGround.SetActive(false);
+            redHoodBattleGround.SetActive(true);
+        }
+
 
         t = 0;
 
@@ -153,6 +178,8 @@ public class BattleLoader : MonoBehaviour
 
                 isCheck = false;
 
+                cd.enabled = false;
+
                 BattleLoad();
             }
         }
@@ -172,12 +199,18 @@ public class BattleLoader : MonoBehaviour
                 else dir = true;
             }
         }
-        else if (Alpha > 0) Alpha -= Time.fixedDeltaTime * alphaSpeed;
+        else if (Alpha > 0) 
+        {
+            Alpha -= Time.fixedDeltaTime * alphaSpeed;
+        }
+        else
+        {
+            outlineSprite.enabled = false;
+        }
     }
     public void StartAnimation()
     {
         Alpha = 0;
-        isCheck = true;
         dir = true;
     }
     public void EndAnimation()
@@ -190,6 +223,9 @@ public class BattleLoader : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isCheck = true;
+            
+            outlineSprite.enabled = true;
+
             StartAnimation();
         }
     }
@@ -198,6 +234,9 @@ public class BattleLoader : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isCheck = false;
+
+            outlineSprite.enabled = false;
+
             EndAnimation();
         }
     }

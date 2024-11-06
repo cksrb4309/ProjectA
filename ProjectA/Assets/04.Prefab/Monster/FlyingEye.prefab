@@ -207,7 +207,7 @@ Transform:
   m_GameObject: {fileID: 850129567714835665}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.588, z: 0}
+  m_LocalPosition: {x: 0, y: -0.241, z: 0}
   m_LocalScale: {x: 2.3, y: 1.21, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -285,7 +285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2365360578621019915
 Transform:
   m_ObjectHideFlags: 0
@@ -430,7 +430,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 0
   projectileName: 
-  damage: 1500
+  damages:
+  - 2000
+  - 2000
+  - 2500
 --- !u!1 &4760405078492849781
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,7 +616,11 @@ MonoBehaviour:
   cd: {fileID: 3648288751167322975}
   hpBarParent: {fileID: 7428057699298793680}
   hpBar: {fileID: 6906872331346837632}
-  maxHpBase: 3000
+  maxHpBases:
+  - 2500
+  - 3500
+  - 5000
+  heightOffset: -0.6
   isBattle: 0
   animator: {fileID: 2961901619727770859}
   playerTransform: {fileID: 0}

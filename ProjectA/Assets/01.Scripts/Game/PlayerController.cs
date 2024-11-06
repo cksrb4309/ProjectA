@@ -21,17 +21,35 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Image hpFillImage;
     [SerializeField] Image spFillImage;
     [SerializeField] Collider2D bottomCollider;
+    [SerializeField] float[] moveSpeed;
+    [SerializeField] float[] jumpSpeed;
+    [SerializeField] float lastJumpSwing = -15f;
+    [SerializeField] float rollRange = 5;
+    [SerializeField] float rollSpeed = 2f;
+    [SerializeField] float[] playerMaxHpBase;
+    [SerializeField] float[] playerMaxSp;
+    [SerializeField] float swingUseStamina = 15f;
+    [SerializeField] float[] rollUseStamina;
+    [SerializeField] float[] jumpUseStamina;
+    [SerializeField] float[] staminaRegenSpeed;
+    /*
+     
     [SerializeField] float moveSpeed = 300f;
     [SerializeField] float jumpSpeed = 13f;
     [SerializeField] float lastJumpSwing = -15f;
     [SerializeField] float rollRange = 5;
     [SerializeField] float rollSpeed = 2f;
     [SerializeField] float playerMaxHp = 100f;
+    [SerializeField] float playerMaxHps = 100f;
     [SerializeField] float playerMaxSp = 100f;
     [SerializeField] float swingUseStamina = 15f;
     [SerializeField] float rollUseStamina = 30f;
     [SerializeField] float jumpUseStamina = 0f;
     [SerializeField] float staminaRegenSpeed = 5f;
+     
+     */
+    float playerMaxHp;
+
     [SerializeField] float fastDownAttackSpeed = -10f;
 
     Rigidbody2D rb;
@@ -45,7 +63,7 @@ public class PlayerController : MonoBehaviour
 
     float playerHp = 10;
     float playerSp = 10;
-    float beforeHpMaxRatio = 100f;
+    float beforeHpMaxRatio = 1f;
 
     int swingCombo = 0;
     int jumpSwingCombo = 0;
@@ -60,7 +78,7 @@ public class PlayerController : MonoBehaviour
     bool dieCheck = false;
     bool fastDownAttackCheck = false;
     bool fastDownAttacking = false;
-
+    bool preventNextAction = false;
     public bool leaf = false; // 아이템으로 인해 스태미나 소모가 필요없을 때
     public bool shield = false; // 아이템으로 인해 공격을 막을 수 있을 때
     float PlayerSp {
@@ -69,8 +87,8 @@ public class PlayerController : MonoBehaviour
             playerSp = value;
             spFillImage.fillAmount =
                 playerSp < 0 ?
-                0 : playerSp / playerMaxSp;
-            spText.text = playerSp.ToString("F0") + " / 100";
+                0 : playerSp / playerMaxSp[(int)Option.difficulty];
+            spText.text = playerSp.ToString("F0") + " / " + playerMaxSp[(int)Option.difficulty].ToString();
         }
     }
 
@@ -93,34 +111,41 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         instance = this;
+
+        isLifesteal = false;
+        isMaximizer = false;
     }
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         ar = GetComponent<Animator>();
 
-        playerHp = playerMaxHp;
-        playerSp = playerMaxSp;
+        playerMaxHp = playerMaxHpBase[(int)Option.difficulty];
+
+        PlayerHp = playerMaxHp;
+
+        playerSp = playerMaxSp[(int)Option.difficulty];
     }
     public void Update()
     {
+        if (preventNextAction == true) return;
+
         if (Input.GetButtonDown("Jump"))
         {
+            if (preventNextAction) return;
             Jump();
         }
         else if (Input.GetButtonDown("Swing"))
         {
+            if (preventNextAction) return;
             if (swingCheck == false) swingCheck = true;
-        }
-        else if (Input.GetButtonDown("Change"))
-        {
-            Change();
         }
         else if (Input.GetButtonDown("Roll"))
         {
+            if (preventNextAction) return;
             Roll();
         }
-        else if (Input.GetButtonDown("Down"))
+        else if (Input.GetButtonDown("Down") || Input.GetKeyDown(KeyCode.S))
         {
             FastDownAttack();
         }
@@ -155,6 +180,8 @@ public class PlayerController : MonoBehaviour
 
         while (transform.position.y > -3.2f) yield return null; // 땅에 근접할 때까지 반복
 
+        SoundManager.Play("PlayerLandAttack", SoundType.Effect);
+
         fastDownEffect.Enable(transform.position);
 
         fastDownAttacking = false;
@@ -175,14 +202,18 @@ public class PlayerController : MonoBehaviour
     }
     public void StatusUpdate()
     {
+        Debug.Log(beforeHpMaxRatio.ToString() + " / " + Inventory.CurrentData.playerHp);
+
         // 플레이어의 최대 HP를 늘렸을 때
-        if (beforeHpMaxRatio < Inventory.CurrentData.playerHp)
+        if (beforeHpMaxRatio != Inventory.CurrentData.playerHp)
         {
+            beforeHpMaxRatio = Inventory.CurrentData.playerHp;
+
             float beforeHpMax = playerMaxHp;
 
-            float currentHpMax = 100 * Inventory.CurrentData.playerHp;
+            playerMaxHp = playerMaxHpBase[(int)Option.difficulty] * Inventory.CurrentData.playerHp;
 
-            float distance = currentHpMax - beforeHpMax;
+            float distance = playerMaxHp - beforeHpMax;
 
             if (distance > 0) PlayerHp += distance;
         }
@@ -192,8 +223,11 @@ public class PlayerController : MonoBehaviour
         // 현재 점프를 사용하지 않았다면
         if (jumpUse == false)
         {
-            if ((ps == PlayerState.Idle || ps == PlayerState.Run) && UseStamina(jumpUseStamina))
+            if (preventNextAction) return;
+            if ((ps == PlayerState.Idle || ps == PlayerState.Run) && UseStamina(jumpUseStamina[(int)Option.difficulty]))
             {
+                preventNextAction = true;
+
                 ps = PlayerState.Jump;
 
                 jumpUse = true;
@@ -204,6 +238,8 @@ public class PlayerController : MonoBehaviour
     {
         if (fastDownAttacking == true) return;
 
+        if (preventNextAction) return;
+
         if (ps == PlayerState.Jump || ps == PlayerState.Fall || ps == PlayerState.JumpSwing1 || ps == PlayerState.JumpSwing2 || ps == PlayerState.JumpSwing3)
         {
             if (!rolling)
@@ -212,6 +248,8 @@ public class PlayerController : MonoBehaviour
                 {
                     if (UseStamina(swingUseStamina))
                     {
+                        preventNextAction = true;
+
                         CancelInvoke();
 
                         isAttacking = true;
@@ -235,6 +273,8 @@ public class PlayerController : MonoBehaviour
         {
             if (!isAttacking && UseStamina(swingUseStamina))
             {
+                preventNextAction = true;
+
                 CancelInvoke();
 
                 isAttacking = true;
@@ -250,10 +290,28 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-    private void Change()
+    #region 소리 재생 함수
+    void FootStapSoundPlay()
     {
-
+        SoundManager.FootStapPlay();
     }
+    void JumpSoundPlay()
+    {
+        SoundManager.Play("PlayerJump", SoundType.Effect);
+    }
+    void SwingSoundPlay_1()
+    {
+        SoundManager.Play("PlayerAttack1", SoundType.Effect);
+    }
+    void SwingSoundPlay_2()
+    {
+        SoundManager.Play("PlayerAttack2", SoundType.Effect);
+    }
+    void SwingSoundPlay_3()
+    {
+        SoundManager.Play("PlayerAttack3", SoundType.Effect);
+    }
+    #endregion
     private void FixedUpdate()
     {
         if (IsAlive == false)
@@ -266,14 +324,17 @@ public class PlayerController : MonoBehaviour
             }
             return;
         }
-        PlayerSp += Time.fixedDeltaTime * staminaRegenSpeed * Inventory.CurrentData.playerStaminaRegen;
-        if (PlayerSp > playerMaxSp) PlayerSp = playerMaxSp;
+        PlayerSp += Time.fixedDeltaTime * staminaRegenSpeed[(int)Option.difficulty] * Inventory.CurrentData.playerStaminaRegen;
+        if (PlayerSp > playerMaxSp[(int)Option.difficulty]) PlayerSp = playerMaxSp[(int)Option.difficulty];
         float x = 0;
 
         if (ps == PlayerState.Fall || ps == PlayerState.Idle || ps == PlayerState.Run)
         {
             if (bottomCollider.IsTouching(filter))
             {
+                if (ps == PlayerState.Fall)
+                    SoundManager.Play("PlayerLand", SoundType.Effect);
+
                 ps = PlayerState.Idle;
                 jumping = false;
                 jumpUse = false;
@@ -286,7 +347,7 @@ public class PlayerController : MonoBehaviour
             jumping = true;
 
             rb.linearVelocityY = 0;
-            rb.AddForceY(jumpSpeed, ForceMode2D.Impulse);
+            rb.AddForceY(jumpSpeed[(int)Option.difficulty], ForceMode2D.Impulse);
         }
 
         // 만약 현재 상태가 점프일 때,
@@ -315,7 +376,7 @@ public class PlayerController : MonoBehaviour
 
                 if (ps == PlayerState.Idle) ps = PlayerState.Run;
 
-                rb.linearVelocityX = x * moveSpeed * Time.fixedDeltaTime * Inventory.CurrentData.playerMoveSpeed;
+                rb.linearVelocityX = x * moveSpeed[(int)Option.difficulty] * Time.fixedDeltaTime * Inventory.CurrentData.playerMoveSpeed;
             }
             else if (ps == PlayerState.Run) ps = PlayerState.Idle;
         }
@@ -334,6 +395,8 @@ public class PlayerController : MonoBehaviour
         if (ps != pbs)
         {
             pbs = ps;
+
+            preventNextAction = false;
 
             switch (ps)
             {
@@ -369,8 +432,11 @@ public class PlayerController : MonoBehaviour
     {
         if (fastDownAttacking == true) return;
 
-        if (!rolling && (leaf || UseStamina(rollUseStamina)))
+        if (!rolling && (leaf || UseStamina(rollUseStamina[(int)Option.difficulty])))
         {
+
+            SoundManager.Play("PlayerRoll", SoundType.Effect);
+
             leaf = false;
             isStop = true;
             rolling = true;
@@ -468,7 +534,6 @@ public class PlayerController : MonoBehaviour
             {
                 PlayerHp -= damage;
 
-
                 DamageTextController.SetDamage(-damage, transform.position + (Vector3.up * 0.5f), 2);
             }
             else if (shield) // 방어 가능한 상태일 때
@@ -500,6 +565,8 @@ public class PlayerController : MonoBehaviour
 
                     if (PlayerHp <= 0) Die();
                     else ar.SetTrigger("Hit");
+
+                    SoundManager.Play("PlayerHit", SoundType.Effect);
                 }
             }
         }
@@ -511,7 +578,7 @@ public class PlayerController : MonoBehaviour
     }
     void OnDeadPanel()
     {
-        GameManager.Instance.Die();
+        GameManager.Instance.GameOver();
     }
     void NotInvincibility()
     {

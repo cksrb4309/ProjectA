@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: "\uACF5\uD5C8\uC758 \uAC11\uC637"
   icon: {fileID: -481751365, guid: ca48f8be9defdba438bf7b98cde0b386, type: 3}
-  description: "\uACF5\uACA9\uC744 15\uD68C \uB9DE\uCDC4\uC744 \uACBD\uC6B0\n2\uCD08
+  description: "\uACF5\uACA9\uC744 15\uD68C \uB9DE\uCDC4\uC744 \uACBD\uC6B0\n3\uCD08
     \uB3D9\uC548 \uACF5\uACA9\uC744 \uB9C9\uC744 \uC218 \uC788\uB2E4"
   gradeColor: {r: 0.6313726, g: 0.23921569, b: 0.99607843, a: 1}
   itemGrade: 2

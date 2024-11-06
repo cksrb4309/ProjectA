@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8820f0003e7813248a59c7f61cf72ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleName: SwingEffect2
 --- !u!95 &4974303384455267051
 Animator:
   serializedVersion: 7

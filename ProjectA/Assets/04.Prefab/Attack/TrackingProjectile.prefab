@@ -166,6 +166,7 @@ MonoBehaviour:
   projectileName: TrackingProjectile
   isMainAttack: 0
   playerPosition: {fileID: 0}
+  hitEffectSound: MagicAttack
   particleName: SwingEffect3
   damage: 2000
 --- !u!50 &415380398632788213

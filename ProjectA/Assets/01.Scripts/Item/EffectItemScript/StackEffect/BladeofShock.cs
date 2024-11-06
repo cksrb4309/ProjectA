@@ -4,85 +4,100 @@ using System.Collections;
 
 public class BladeofShock : StackEffect
 {
-    public float damage;
     public float minDistance;
-    public GameObject[] spark;
-    public LineRenderer sparkLine;
-    List<Monster> MonsterPos { get { return Battle.instance.monsterPos; } }
+
+    float attackDelay = 0.1f;
+
+    public ParticleSystem[] particles;
+
+    List<Monster> MonsterList { get { return Battle.instance.monsterPos; } }
+
+    List<Monster> attackList = new List<Monster>();
+
+    Monster lastMob = null;
+
     public override void Play()
     {
-        List<Monster> attackList = new List<Monster>();
+        lastMob = null;
 
-        Monster target = GameManager.Instance.lastHitMonster;
+        lastMob = GameManager.Instance.lastHitMonster;
 
-        attackList.Add(target);
+        attackList.Clear();
 
-        int cnt = 2;
+        attackList.Add(lastMob);
 
-        while (cnt--> 0)
+        lastMob.Hit(1200, false);
+
+        SoundManager.Play("StaticAttack", SoundType.Effect);
+
+        particles[0].transform.position = lastMob.GetCenterPosition();
+        particles[0].Play();
+
+        LightningMaterial.StartTextureChange(); // 애니메이션 실행
+
+        StartCoroutine(SearchMonsterCoroutine(2));
+    }
+
+    IEnumerator SearchMonsterCoroutine(int n)
+    {
+        yield return new WaitForSeconds(attackDelay);
+
+        SearchMonster(n);
+    }
+
+    void SearchMonster(int n)
+    {
+        if (n == 0) return;
+
+        Monster mob = null;
+
+        Vector2 targetPos = lastMob.transform.position;
+
+        float minValue = minDistance;
+
+        for (int i = 0; i < MonsterList.Count; i++)
         {
-            Monster mob = null;
-
-            Vector2 targetPos = target.transform.position;
-
-            float minValue = 100f;
-
-            for (int i = 0; i < MonsterPos.Count; i++)
+            bool isContains = false;
+            for (int j = 0; j < attackList.Count; j++)
             {
-                bool isContains = false;
-                for (int j = 0; j < attackList.Count; j++)
-                {
-                    if (attackList[j].id == MonsterPos[i].id)
-                        isContains = true;
+                if (attackList[j].id == MonsterList[i].id){
+                    isContains = true; break;
                 }
+            }
 
-                if (!isContains)
+            if (!isContains)
+            {
+                Vector2 vec = targetPos - (Vector2)MonsterList[i].transform.position;
+
+                float distance = Mathf.Abs(vec.x) + Mathf.Abs(vec.y);
+
+                if (minDistance > distance)
                 {
-                    Vector2 vec = targetPos - (Vector2)MonsterPos[i].transform.position;
-
-                    float distance = Mathf.Abs(vec.x) + Mathf.Abs(vec.y);
-
-                    if (minDistance > distance)
+                    if (minValue > distance)
                     {
-                        if (minValue > distance)
-                        {
-                            minValue = distance;
+                        minValue = distance;
 
-                            mob = MonsterPos[i];
-                        }
+                        mob = MonsterList[i];
                     }
                 }
             }
-            if (mob != null)
-            {
-                target = mob;
-
-                attackList.Add(mob);
-            }
-            else break;
         }
-
-        for (int i = 0; i < attackList.Count; i++)
+        if (mob != null)
         {
-            attackList[i].Hit(12, false);
+            attackList.Add(mob);
+
+            mob.Hit(1200, false);
+
+            LightningGroup lg = PoolingManager.Instance.GetObject<LightningGroup>("LightningGroup");
+
+            lg.Set(lastMob.GetCenterPosition(), mob.GetCenterPosition());
+
+            particles[particles.Length - n].transform.position = mob.GetCenterPosition();
+            particles[particles.Length - n].Play();
+
+            lastMob = mob;
+
+            StartCoroutine(SearchMonsterCoroutine(n-1));
         }
-
-        sparkLine.gameObject.SetActive(true);
-        sparkLine.positionCount = attackList.Count;
-        for (int i = 0; i < attackList.Count; i++)
-        {
-            spark[i].SetActive(true);
-            spark[i].transform.position = attackList[i].GetCenterPosition();
-            sparkLine.SetPosition(i, attackList[i].GetCenterPosition());
-        }
-
-        StartCoroutine(DisableCoroutine());
-    }
-    IEnumerator DisableCoroutine()
-    {
-        yield return new WaitForSeconds(1f);
-
-        for (int i = 0; i < 3; i++) spark[i].SetActive(false);
-        sparkLine.gameObject.SetActive(false);
     }
 }

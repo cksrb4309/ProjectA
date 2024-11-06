@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Level_4
   m_EditorClassIdentifier: 
   mobSetList:
-  - {fileID: 11400000, guid: e6c4dbf9bcc4b954d9ddb2f6d4b79b62, type: 2}
-  - {fileID: 11400000, guid: 69a60005d8958334f90e34c2e80ad27f, type: 2}
-  - {fileID: 11400000, guid: df90f929fe10c6a489df7ebdeab399ef, type: 2}
+  - {fileID: 11400000, guid: 50ff5182a1ea0094685a5824afe286ac, type: 2}
   - {fileID: 11400000, guid: b29225b594a7e5347b03368394f44994, type: 2}
+  - {fileID: 11400000, guid: a9bbc498035d4ab46b9e77cdb43cdb5b, type: 2}
+  - {fileID: 11400000, guid: 2a79031b00be1ad4c9903f4484722f57, type: 2}
   itemProbability: {fileID: 11400000, guid: 49720722c41fe834cb47222477a7cb5b, type: 2}
   nextWaveDelay: 4.4
   spawnDelay: 0.8

@@ -38,4 +38,8 @@ public class MiragePlayerController : MonoBehaviour
         
         ar.SetTrigger("Idle");
     }
+    public void Swing(int number)
+    {
+        SoundManager.Play("PlayerAttack" + number.ToString(), SoundType.Effect);
+    }
 }

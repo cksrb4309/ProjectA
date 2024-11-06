@@ -63,6 +63,8 @@ public class TrackingArrow : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
+        SoundManager.Play("RedHoodTrackingArrow", SoundType.Effect);
+
         targetLine.enabled = false;
 
         arrowTrail.enabled = true;

@@ -335,6 +335,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Flight_8
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 11
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5a06dfb2800d14888df6a4cd948e12
+      internalID: -1500419199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -357,6 +379,7 @@ TextureImporter:
       Flight_5: -4262185617143388622
       Flight_6: 5066340549283584134
       Flight_7: 7784096630628774620
+      Flight_8: -1500419199
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

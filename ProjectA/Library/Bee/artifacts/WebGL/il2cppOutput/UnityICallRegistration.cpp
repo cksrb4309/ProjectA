@@ -778,6 +778,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Application_OpenURL_Injected();
 		Register_UnityEngine_Application_OpenURL_Injected();
 
+		//System.Void UnityEngine.Application::Quit(System.Int32)
+		void Register_UnityEngine_Application_Quit();
+		Register_UnityEngine_Application_Quit();
+
 		//System.Void UnityEngine.Application::get_streamingAssetsPath_Injected(UnityEngine.Bindings.ManagedSpanWrapper&)
 		void Register_UnityEngine_Application_get_streamingAssetsPath_Injected();
 		Register_UnityEngine_Application_get_streamingAssetsPath_Injected();
@@ -821,6 +825,26 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.AudioSource::GetSpectrumDataHelper_Injected(System.IntPtr,UnityEngine.Bindings.BlittableArrayWrapper&,System.Int32,UnityEngine.FFTWindow)
 		void Register_UnityEngine_AudioSource_GetSpectrumDataHelper_Injected();
 		Register_UnityEngine_AudioSource_GetSpectrumDataHelper_Injected();
+
+		//System.Void UnityEngine.AudioSource::PlayHelper_Injected(System.IntPtr,System.UInt64)
+		void Register_UnityEngine_AudioSource_PlayHelper_Injected();
+		Register_UnityEngine_AudioSource_PlayHelper_Injected();
+
+		//System.Void UnityEngine.AudioSource::PlayOneShotHelper_Injected(System.IntPtr,System.IntPtr,System.Single)
+		void Register_UnityEngine_AudioSource_PlayOneShotHelper_Injected();
+		Register_UnityEngine_AudioSource_PlayOneShotHelper_Injected();
+
+		//System.Void UnityEngine.AudioSource::Stop_Injected(System.IntPtr,System.Boolean)
+		void Register_UnityEngine_AudioSource_Stop_Injected();
+		Register_UnityEngine_AudioSource_Stop_Injected();
+
+		//System.Void UnityEngine.AudioSource::set_resource_Injected(System.IntPtr,System.IntPtr)
+		void Register_UnityEngine_AudioSource_set_resource_Injected();
+		Register_UnityEngine_AudioSource_set_resource_Injected();
+
+		//System.Void UnityEngine.AudioSource::set_volume_Injected(System.IntPtr,System.Single)
+		void Register_UnityEngine_AudioSource_set_volume_Injected();
+		Register_UnityEngine_AudioSource_set_volume_Injected();
 
 	//End Registrations for type : UnityEngine.AudioSource
 
@@ -3085,6 +3109,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.LineRenderer::set_startWidth_Injected(System.IntPtr,System.Single)
 		void Register_UnityEngine_LineRenderer_set_startWidth_Injected();
 		Register_UnityEngine_LineRenderer_set_startWidth_Injected();
+
+		//System.Void UnityEngine.LineRenderer::set_useWorldSpace_Injected(System.IntPtr,System.Boolean)
+		void Register_UnityEngine_LineRenderer_set_useWorldSpace_Injected();
+		Register_UnityEngine_LineRenderer_set_useWorldSpace_Injected();
 
 	//End Registrations for type : UnityEngine.LineRenderer
 
@@ -6054,6 +6082,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_SpriteRenderer_get_sprite_Injected();
 		Register_UnityEngine_SpriteRenderer_get_sprite_Injected();
 
+		//System.Void UnityEngine.SpriteRenderer::get_color_Injected(System.IntPtr,UnityEngine.Color&)
+		void Register_UnityEngine_SpriteRenderer_get_color_Injected();
+		Register_UnityEngine_SpriteRenderer_get_color_Injected();
+
 		//System.Void UnityEngine.SpriteRenderer::get_size_Injected(System.IntPtr,UnityEngine.Vector2&)
 		void Register_UnityEngine_SpriteRenderer_get_size_Injected();
 		Register_UnityEngine_SpriteRenderer_get_size_Injected();
@@ -6878,6 +6910,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Time_get_timeAsRational_Injected();
 		Register_UnityEngine_Time_get_timeAsRational_Injected();
 
+		//System.Void UnityEngine.Time::set_timeScale(System.Single)
+		void Register_UnityEngine_Time_set_timeScale();
+		Register_UnityEngine_Time_set_timeScale();
+
 	//End Registrations for type : UnityEngine.Time
 
 	//Start Registrations for type : UnityEngine.TouchScreenKeyboard
@@ -7687,6 +7723,22 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_VFX_VisualEffectAsset_GetExposedSpace_Injected();
 
 	//End Registrations for type : UnityEngine.VFX.VisualEffectAsset
+
+	//Start Registrations for type : UnityEngine.Video.VideoPlayer
+
+		//System.Void UnityEngine.Video.VideoPlayer::Play_Injected(System.IntPtr)
+		void Register_UnityEngine_Video_VideoPlayer_Play_Injected();
+		Register_UnityEngine_Video_VideoPlayer_Play_Injected();
+
+		//System.Void UnityEngine.Video.VideoPlayer::Stop_Injected(System.IntPtr)
+		void Register_UnityEngine_Video_VideoPlayer_Stop_Injected();
+		Register_UnityEngine_Video_VideoPlayer_Stop_Injected();
+
+		//System.Void UnityEngine.Video.VideoPlayer::set_clip_Injected(System.IntPtr,System.IntPtr)
+		void Register_UnityEngine_Video_VideoPlayer_set_clip_Injected();
+		Register_UnityEngine_Video_VideoPlayer_set_clip_Injected();
+
+	//End Registrations for type : UnityEngine.Video.VideoPlayer
 
 	//Start Registrations for type : UnityEngine.XR.XRDevice
 

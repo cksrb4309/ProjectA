@@ -77,7 +77,7 @@ public class Dummy : Monster
             }
         }
 
-        if (Hp == 0) Hp = maxHpBase;
+        if (Hp == 0) Hp = maxHpBases[(int)Option.difficulty];
 
         animator.SetTrigger("Hit");
     }

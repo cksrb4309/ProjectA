@@ -4,7 +4,7 @@ using UnityEngine;
 public class RestrictedAreaWarning : MonoBehaviour
 {
     public SpriteRenderer warningSr;
-
+    public WallAttack wallAttack;
     Color srColor = Color.white;
 
     float Alpha
@@ -41,6 +41,7 @@ public class RestrictedAreaWarning : MonoBehaviour
         }
 
         // 오래 있었을 경우 조치 여기다가~
+        wallAttack.StartAttack();
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -48,6 +49,8 @@ public class RestrictedAreaWarning : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             StopAllCoroutines();
+
+            wallAttack.EndAttack();
 
             StartCoroutine(StopWarningCoroutine());
         }

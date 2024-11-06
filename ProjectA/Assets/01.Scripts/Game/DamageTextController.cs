@@ -33,9 +33,11 @@ public class DamageTextController : MonoBehaviour
         pos.x += Random.Range(-instance.randomX, instance.randomX);
         pos.y += Random.Range(-instance.randomY, instance.randomY);
 
+        pos.y += 0.3f;
+
         textUI.transform.parent.position = pos;
 
-        string str = (damage % 1 == 0) ? damage.ToString("F0") : damage.ToString("F2");
+        string str = (damage % 1 == 0) ? damage.ToString() : Mathf.Floor(damage).ToString();
 
         textUI.text = str;
     }

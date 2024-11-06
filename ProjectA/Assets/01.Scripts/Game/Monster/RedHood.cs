@@ -17,7 +17,6 @@ public class RedHood : Monster
     public Transform[] trackingArrowFirePos;
 
     public ParticleSystem[] particles;
-
     Transform Player
     {
         get { return PlayerController.instance.transform; }
@@ -34,7 +33,7 @@ public class RedHood : Monster
 
     int phase = 0; // 현재 보스몹 단계 Phase
     int pattern = 0; // 랜덤으로 선택한 패턴
-    int current = 0; // 현재 패턴 액션 Index
+    int current = -1; // 현재 패턴 액션 Index
 
     Vector3 beforePos = new Vector3(0, 3.255901f, 0); // 이전 위치 저장
     Vector3 currentPosition = Vector3.zero; // 현재 위치
@@ -127,8 +126,6 @@ public class RedHood : Monster
         #endregion
 
         currentPosition = transform.position;
-
-        Setting();
     }
     public override void StartMonster()
     {
@@ -136,7 +133,15 @@ public class RedHood : Monster
 
         currentPosition = transform.position;
 
-        patternActions[phase][pattern][current].Invoke();
+        // patternActions[phase][pattern][current].Invoke();
+
+        ar.SetTrigger("Start");
+
+        particles[10].Play();
+
+        cd.enabled = false;
+
+        SoundManager.Play("RedHoodLaugh", SoundType.Effect);
     }
     #region 삼중 추적 화살                                [ TripleTrackingArrow ]
 
@@ -156,6 +161,8 @@ public class RedHood : Monster
         TrackingArrow arrow = PoolingManager.Instance.GetObject<TrackingArrow>("TrackingArrow");
 
         arrow.StartMove(trackingArrowFirePos[trackingArrowFirePosIndex++].position);
+
+        SoundManager.Play("RedHoodTrackingCharge", SoundType.Effect);
     }
     #endregion
     #region 활을 시위에 겨누고 이동 후 정면 방향에 쏜다   [ ChargeArrow ]
@@ -168,6 +175,8 @@ public class RedHood : Monster
     {
         Debug.Log("충전 이펙트");
         particles[3].Play(); // 활로 충전하는 이펙트 줌
+
+        SoundManager.Play("ChargeArrow", SoundType.Effect);
     }
     void CheckDash() // 이동해야할 필요가 있을 때 이동한 후 화살을 쏜다
     {
@@ -191,6 +200,9 @@ public class RedHood : Monster
     void ChargeArrowShoot()
     {
         Debug.Log("화살 발사");
+
+        SoundManager.Play("ShootArrow", SoundType.Effect);
+
         Vector3 front = (dir == Dir.Left ? Vector3.left : Vector3.right);
         Vector3 top = Vector3.up;
 
@@ -228,6 +240,8 @@ public class RedHood : Monster
         transform.position = currentPosition;
 
         Debug.Log("위치 확인 X:" + transform.position.x.ToString());
+
+        SoundManager.Play("RedHoodGreatAxeSwing", SoundType.Effect);
 
         ar.SetTrigger("AxeGreatAttack");
     }
@@ -303,6 +317,8 @@ public class RedHood : Monster
 
         // 단검 속도, 방향 조정
         knife.StartMove(12f, ((Player.position + Vector3.up * 0.5f) - knife.transform.position).normalized);
+
+        SoundManager.Play("RedHoodThrowKnife", SoundType.Effect);
     }
     #endregion
     #region 플레이어 쳐다본 후 해당 방향으로 이동         [ MoveTowardPlayer ]
@@ -321,6 +337,13 @@ public class RedHood : Monster
     void AxeAttack()
     {
         Debug.Log("도끼 공격");
+
+        StartCoroutine(AxeAttackCoroutine());
+    }
+    IEnumerator AxeAttackCoroutine()
+    {
+        yield return null;
+
         ar.SetTrigger("AxeAttack");
     }
     #endregion
@@ -532,7 +555,7 @@ public class RedHood : Monster
 
         yield return null;
 
-        ar.SetTrigger("Run"); // 달리기 애니메이션
+        ar.SetTrigger("ThrowAppleRun"); // 달리기 애니메이션
 
         float goal = (10f * (transform.position.x <= 0 ? 1 : -1));
 
@@ -565,6 +588,8 @@ public class RedHood : Monster
                 GameObject poisonApple = PoolingManager.Instance.GetObject("PoisonApple");
 
                 poisonApple.transform.position = transform.position + Vector3.up * 0.5f;
+
+                SoundManager.Play("RedHoodThrowApple", SoundType.Effect);
             }
 
             if (dirCheck == isLeft) break;
@@ -613,8 +638,10 @@ public class RedHood : Monster
     #region 다음 행동 결정                                [ NextActionSetting ]
     void NextActionSetting(float delay = 0)
     {
-        ar.SetTrigger("Idle");
-
+        if (cd.enabled == false)
+        {
+            cd.enabled = true;
+        }
         current++; // 현재 패턴에서 다음 액션으로 넘긴다
 
         // 만약 현재 패턴이 끝났을 경우
@@ -674,9 +701,8 @@ public class RedHood : Monster
             // 기본값인 0이라면 기본 ActionDelay를 적용한다
             else if (delay == 0) yield return new WaitForSeconds(nextActionDelay);
 
-            else yield return null; // 만약 음수일 때는 1프레임 넘긴다
+            yield return null;
 
-            // 만약 delay로 음수값을 받아왔다면 즉시 실행된다
             patternActions[phase][pattern][current].Invoke();
         }
     }
@@ -717,7 +743,7 @@ public class RedHood : Monster
     }
     IEnumerator FillHpCoroutine()
     {
-        maxHp = phase == 1 ? 50000 : 70000;
+        maxHp = phase == 1 ? maxHpBases[(int)Option.difficulty] * 1.2f : maxHpBases[(int)Option.difficulty] * 1.5f;
         maxHp *= Inventory.CurrentData.monsterHp;
 
         float t = 0;
@@ -730,6 +756,7 @@ public class RedHood : Monster
 
             yield return null;
         }
+
         Hp = maxHp;
 
         cd.enabled = true; // 충돌 활성화
@@ -748,9 +775,27 @@ public class RedHood : Monster
 
         particles[8].Play();
         particles[9].Play();
+
+        SoundManager.Play("RedHoodScream", SoundType.Effect);
     }
     void ClearGame()
     {
-        GameManager.Instance.ClearGame();
+        GameManager.Instance.GameClear();
+    }
+    void KnifeSwingSoundPlay1()
+    {
+        SoundManager.Play("RedHoodKnifeSwing1", SoundType.Effect);
+    }
+    void KnifeSwingSoundPlay2()
+    {
+        SoundManager.Play("RedHoodKnifeSwing2", SoundType.Effect);
+    }
+    void KnifeSwingSoundPlay3()
+    {
+        SoundManager.Play("RedHoodKnifeSwing3", SoundType.Effect);
+    }
+    void CriticalKnifeSwingSoundPlay()
+    {
+        SoundManager.Play("RedHoodCriticalKnife", SoundType.Effect);
     }
 }

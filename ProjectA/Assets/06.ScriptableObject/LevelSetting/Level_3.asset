@@ -16,7 +16,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a7a019d53d5e88d4ab5cdce73d0a9260, type: 2}
   - {fileID: 11400000, guid: 2a79031b00be1ad4c9903f4484722f57, type: 2}
   - {fileID: 11400000, guid: 2070742750faccb4c978cbc2986f6746, type: 2}
-  - {fileID: 11400000, guid: 32186714d5957e64ba310e8a28a5372a, type: 2}
   itemProbability: {fileID: 11400000, guid: 49720722c41fe834cb47222477a7cb5b, type: 2}
   nextWaveDelay: 4.6
   spawnDelay: 0.8

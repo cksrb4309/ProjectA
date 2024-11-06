@@ -5,21 +5,44 @@ public class ArmoroftheVoid : StackEffect
 {
     public PlayerController pc;
 
-    public ShieldGroup shield;
+    public SpriteRenderer shield;
+
+    Color color;
 
     public override void Play()
     {
-        shield.enabled = true;
+        shield.gameObject.SetActive(true);
+
+        color = shield.color;
+
+        pc.shield = true;
+
+        StopAllCoroutines();
+
         StartCoroutine(ShieldCoroutine());
     }
     IEnumerator ShieldCoroutine()
     {
-        pc.shield = true;
-        shield.Enable();
-        yield return new WaitForSeconds(1.5f);
-        shield.Diasable();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(2f);
+
+        shield.color = new Color(0, 0, 0, 0);
+
+        yield return new WaitForSeconds(0.25f);
+
+        shield.color = color;
+
+        yield return new WaitForSeconds(0.25f);
+
+        shield.color = new Color(0, 0, 0, 0);
+
+        yield return new WaitForSeconds(0.25f);
+
+        shield.color = color;
+
+        yield return new WaitForSeconds(0.25f);
+
+        shield.gameObject.SetActive(false);
+
         pc.shield = false;
-        shield.enabled = false;
     }
 }

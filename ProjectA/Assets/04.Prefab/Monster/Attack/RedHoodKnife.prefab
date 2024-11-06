@@ -166,4 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isProjectile: 1
   projectileName: RedHoodKnife
-  damage: 2500
+  damages:
+  - 2500
+  - 2500
+  - 3000

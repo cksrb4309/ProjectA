@@ -2,6 +2,7 @@
 	<assembly fullname="Assembly-CSharp">
 		<type fullname=".CameraLimit" preserve="nothing" serialized="true"/>
 		<type fullname=".ObjectPoolElement" preserve="nothing" serialized="true"/>
+		<type fullname=".Sound" preserve="nothing" serialized="true"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
 		<type fullname="UnityEngine.InputSystem.InputAction" preserve="nothing" serialized="true"/>
@@ -121,6 +122,7 @@
 		<type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.UI.Scrollbar/ScrollEvent" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.UI.ScrollRect/ScrollRectEvent" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.UI.Toggle/ToggleEvent" preserve="nothing" serialized="true"/>
 	</assembly>

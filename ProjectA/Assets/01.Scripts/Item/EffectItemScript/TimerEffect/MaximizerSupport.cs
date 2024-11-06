@@ -11,6 +11,8 @@ public class MaximizerSupport : MonoBehaviour
     public void Enable()
     {
         ar.SetTrigger("On");
+
+        SoundManager.Play("MaximizerCharge", SoundType.Effect);
     }
     public void OnMaximizer()
     {
